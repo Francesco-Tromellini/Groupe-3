@@ -1,4 +1,4 @@
-# Groupe-3
+# Groupe-3 Producteurs locaux
 
 ## Description du projet
 
