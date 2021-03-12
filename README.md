@@ -7,7 +7,7 @@ Plateforme s'apparentant à Tinder, qui permet aux consommateurs de rentrer leur
 Il y aurait également moyen de trouver des producteurs/artisans de manière plus ciblée, en recherchant des informations plus spécifiques que simplement le rayon. Contient des denrées alimentaires ou de l'artisanat. Choisir d'après un trajet, voir les producteurs sur la route. 
 
 ## Services apparentés
-Plusieurs services se rapprochant du notre existent déjà. Par exemple : 
+Plusieurs services se rapprochant du nôtre existent déjà. Par exemple : 
 - Qoqa : mise en avant de produits locaux ou de bons plans ; 
 - Toogoodtogo : 
 - Association romande marché paysan 
