@@ -30,3 +30,16 @@ La plateforme serait utile aussi du point de vue du point de vue des utilisateur
 
 
 ## Liste des actions possibles pour les différents rôles dans le projet 
+Acteur 1 producteurs et artisans:
+- créer un profil et un page pour ces produits
+- indiquer un certain nombre d'info (adresse, types de produits, description, lien url pour potentiel site ou page, photos, horaire d'ouverture…)
+- tenir à jour la liste des produits disponibles sur le moment 
+- communiquer des promotions 
+
+Acteur 2 les consommateurs:
+- créer un profil de consommateur
+- pouvoir indiquer un rayon autour de sa localisation 
+- faire des recherche ciblés (par catégories pas exemple)
+- pouvoir suivre les pages des producteurs ou artisans
+- pouvoir partager les pages si besoin
+- pouvoir laisser des appréciations (pas forcèment sur le modèle classique, à redéfinir)
