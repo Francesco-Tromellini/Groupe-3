@@ -8,11 +8,11 @@ Il y aurait également moyen de trouver des producteurs/artisans de manière plu
 
 ## Services apparentés
 Plusieurs services se rapprochant du nôtre existent déjà. Voici plusieurs d'entre eux :  
-- Qoqa : mise en avant de produits locaux ou de bons plans ; 
-- Association romande marché paysan : but ;
-- Wheretobio : bonne source d'inspiration, toutefois centralisé uniquement sur la nourriture. Notre plus value se situerait au niveau de l'artisanat, c'est-à-dire mettre en avant des artisants également ; 
-- Toogoodtogo : 
-- Etsy
+- *Qoqa* par sa mise en avant de produits locaux ou de bons plans favorisant une consommation potentiellement plus locale ; 
+- *Association romande marché paysan* qui, grâce à son site web, permet aux consommaters de trouver des producteurs locaux, soit par leur identité, soit par leurs produits ;
+- *Wheretobio* qui constitue une bonne source d'inspiration, tant au niveau de l'expérience utilisateur (interface simple et efficace, mais également agréable d'utilisation) qu'au niveau du contenu (mise en avant de producteurs locaux bio). Toutefois, notre projet constituerait une plus value puisque nous désirons mettre en avant non seulement des producteurs, mais également des artisans (ce que ne fait pas *wheretobio*).  
+- *Etsy* dans sa logique de plateforme pour les artisans. Nous ne désirons pas devenir un lieu de commerce contrairement à celui-ci, mais le principe de l'artisanat est intéressant pour nous. 
+- *Toogoodtogo* dans une logique de mise en avant de produits particuliers et potentiellement périmables, mais également sur le principe du "panier surprise", permettant au producteur/artisan de liquider des stocks parfois encombrant (denrées périsables) ou pour faire découvrir des projets originaux/personnels. 
 
 
 ##  Bénéfices du projet pour le public cible
