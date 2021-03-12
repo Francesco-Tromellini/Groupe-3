@@ -1,4 +1,4 @@
-# Groupe-3 Producteurs locaux
+# Groupe-3 Producteurs/Artisans locaux
 
 ## Description du projet
 
@@ -11,7 +11,7 @@ Plusieurs services se rapprochant du notre existent déjà. Par exemple :
 - Qoqa : mise en avant de produits locaux ou de bons plans ; 
 - Toogoodtogo : 
 - Association romande marché paysan 
-- Wheretobio : bonne source d'inspiration, toutefois centralisé uniquement sur la nourriture. Notre plus value se situerait au niveau de l'artisanat, c'est-à-dire mettre en avant des artisants également 
+- Wheretobio : bonne source d'inspiration, toutefois centralisé uniquement sur la nourriture. Notre plus value se situerait au niveau de l'artisanat, c'est-à-dire mettre en avant des artisans  
 - Etsy
 
 
