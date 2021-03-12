@@ -2,9 +2,9 @@
 
 ## Description du projet
 
-Plateforme s'apparentant à Tinder, qui permet aux consommateurs de rentrer leur localisation et un rayon voulu pour ensuite découvrir des producteurs alentours et pouvoir suivre ceux-ci. Les producteurs/artisants pourront mettre à jour leurs données, et les consommateurs pourront alors suivre leurs actualités . 
+Plateforme s'apparentant à Tinder, qui permet aux consommateurs de rentrer leur localisation et un rayon voulu pour découvrir des producteurs alentours et pouvoir suivre ceux-ci. Les producteurs/artisants pourront mettre à jour leurs données, et les consommateurs pourront alors suivre leurs actualités s'ils le veulent. 
 
-Peut choisir des catégories basé sur un rayon, catégories rattachées, et autres critères. Contient des denrées alimentaires ou de l'artisanat. Choisir d'après un trajet, voir les producteurs sur la route. 
+Il y aurait également moyen de trouver des producteurs/artisans de manière plus ciblée, en recherchant des informations plus spécifiques que simplement le rayon. Contient des denrées alimentaires ou de l'artisanat. Choisir d'après un trajet, voir les producteurs sur la route. 
 
 ## Services apparentés
 Plusieurs services se rapprochant du notre existent déjà. Par exemple : 
