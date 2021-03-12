@@ -25,7 +25,7 @@ Plateforme va aider les producteurs et artisans
 La plateforme serait utile aussi du point de vue du point de vue des utilisateurs :
  - pour connaitre les producteurs et artisans de la région
  - valoriser les produits de la tradition local
- - consumer de manière écologique 
+ - consumer de manière écologique  
  - favoriser les petits producteurs
 
 
