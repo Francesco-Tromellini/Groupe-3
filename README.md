@@ -12,6 +12,7 @@ Plusieurs services se rapprochant du notre existent déjà. Par exemple :
 - Toogoodtogo : 
 - Association romande marché paysan 
 - Wheretobio : bonne source d'inspiration, toutefois centralisé uniquement sur la nourriture. Notre plus value se situerait au niveau de l'artisanat, c'est-à-dire mettre en avant des artisants également 
+- Etsy
 
 
 ##  Bénéfices du projet pour le public cible
