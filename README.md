@@ -7,11 +7,11 @@ Plateforme s'apparentant à Tinder, qui permet aux consommateurs de rentrer leur
 Il y aurait également moyen de trouver des producteurs/artisans de manière plus ciblée, en recherchant des informations plus spécifiques que simplement le rayon. Contient des denrées alimentaires ou de l'artisanat. Choisir d'après un trajet, voir les producteurs sur la route. 
 
 ## Services apparentés
-Plusieurs services se rapprochant du nôtre existent déjà. Par exemple : 
+Plusieurs services se rapprochant du nôtre existent déjà. Voici plusieurs d'entre eux :  
 - Qoqa : mise en avant de produits locaux ou de bons plans ; 
+- Association romande marché paysan :  ;
+- Wheretobio : bonne source d'inspiration, toutefois centralisé uniquement sur la nourriture. Notre plus value se situerait au niveau de l'artisanat, c'est-à-dire mettre en avant des artisants également ; 
 - Toogoodtogo : 
-- Association romande marché paysan 
-- Wheretobio : bonne source d'inspiration, toutefois centralisé uniquement sur la nourriture. Notre plus value se situerait au niveau de l'artisanat, c'est-à-dire mettre en avant des artisants également 
 - Etsy
 
 
