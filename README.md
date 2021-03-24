@@ -40,3 +40,16 @@ Acteur 2, les consommateurs:
 - pouvoir suivre les pages des producteurs ou artisans ;
 - pouvoir partager les pages si besoin ;
 - pouvoir laisser des appréciations (pas forcèment sur le modèle classique, à redéfinir).
+
+## Types de catégories de produits 
+On veut commencer par trier nos produits en deux macro-catégories : alimentaire vs. non-alimentaire :
+1. Non-alimentaire (en lien avec les artisans) :
+  a. Bijoux et accessoires ;
+  b. Vêtements et travail tissus ;
+  c. Art et création ;
+  d. Mobiliers ;
+  e. Maison et déco ; 
+  g. Mariage et fêtes ;
+  
+3. Alimentaire (en lien avec les producteurs) : 
+
