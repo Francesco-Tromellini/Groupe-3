@@ -41,6 +41,9 @@ Acteur 2, les consommateurs:
 - pouvoir partager les pages si besoin ;
 - pouvoir laisser des appréciations (pas forcèment sur le modèle classique, à redéfinir).
 
+Interaction consommateurs - producteurs/artisans 
+- Deux moyens pour entrer en communication : soit par un chat qui est hébergé par l'application, soit via les données personnelles rendues disponibles par les producteurs/artisans. C'est à ces derniers de préciser quel moyen il favorise. 
+
 ## Types de catégories de produits 
 On veut commencer par trier nos produits en deux macro-catégories : alimentaire vs. non-alimentaire :
 1. Non-alimentaire (en lien avec les artisans) :
