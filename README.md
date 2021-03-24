@@ -44,12 +44,12 @@ Acteur 2, les consommateurs:
 ## Types de catégories de produits 
 On veut commencer par trier nos produits en deux macro-catégories : alimentaire vs. non-alimentaire :
 1. Non-alimentaire (en lien avec les artisans) :
-  a. Bijoux et accessoires ;
-  b. Vêtements et travail tissus ;
-  c. Art et création ;
-  d. Mobiliers ;
-  e. Maison et déco ; 
-  g. Mariage et fêtes ;
+- Bijoux et accessoires ;
+- Vêtements et travail tissus ;
+- Art et création ;
+- Mobiliers ;
+- Maison et déco ; 
+- Mariage et fêtes ;
   
 3. Alimentaire (en lien avec les producteurs) : 
 
