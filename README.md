@@ -42,7 +42,8 @@ Acteur 2, les consommateurs:
 - pouvoir laisser des appréciations (pas forcèment sur le modèle classique, à redéfinir).
 
 Interaction consommateurs - producteurs/artisans 
-- Deux moyens pour entrer en communication : soit par un chat qui est hébergé par l'application, soit via les données personnelles rendues disponibles par les producteurs/artisans. C'est à ces derniers de préciser quel moyen il favorise. 
+- Deux moyens pour entrer en communication : soit par un chat qui est hébergé par l'application, soit via les données personnelles rendues disponibles par les producteurs/artisans. C'est à ces derniers de préciser quel moyen il favorise. A voir si on laisse aux producteurs/artisans le choix de désactiver la fonctionnalité chat, et d'envoyer de ce fait un message automatique annonçant que le producteur/artisan ne répond pas. 
+- Moyen de rendre compte de la satisfaction du consommateur : système du like, comme sur Instagram. On ne désire pas permettre de mettre des commentaires désagréables. Cependant, il est nécessaire que l'on permette aux consommateurs de signaler lorsqu'il y a eu un comportement ou une qualité de produit déplorable.
 
 ## Types de catégories de produits 
 On veut commencer par trier nos produits en deux macro-catégories : alimentaire vs. non-alimentaire :
