@@ -50,6 +50,12 @@ On veut commencer par trier nos produits en deux macro-catégories : alimentaire
 - Mobiliers ;
 - Maison et déco ; 
 - Mariage et fêtes ;
+(On pourrait également créer des catégories plus fines, en cliquant sur les catégories précédemment citées, en fonction du type de matériau utilisé. Attention : il faudrait que cela soit relativement large comme "métal", "bois", etc.)
   
 3. Alimentaire (en lien avec les producteurs) : 
+- Boulangerie & pâtisserie ;
+- Epiceries ;
+- Divers ; 
+- Fruits & légumes ; 
+- céréales ;
 
