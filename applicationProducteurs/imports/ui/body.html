@@ -1,0 +1,12 @@
+<body>
+    <header>
+        <h1>Annonces</h1>
+    </header>
+    <ul>
+        {{#each annonce}} {{>annonce}} {{/each}}
+    </ul>
+</body>
+
+<template name="annonce">
+    <li>{{text}}</li>
+</template>
