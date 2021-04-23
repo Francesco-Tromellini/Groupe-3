@@ -1,7 +1,7 @@
 <template name="login">
-    <div class="contenu">
+  <div class="contenu">
     {{#if currentUser}}
-    <h3 class="black">Vous êtes connecté !</h3>
+      <h3 class="black">Vous êtes connecté !</h3>
     {{else}}
     <form class="form-signin">
       <h2 class="form-signin-heading">Se connecter</h2>
@@ -14,8 +14,8 @@
       <br>
       <button type="submit" id="login-btn" class="btn btn-lg btn-success btn-block">Se connecter</button>
       <br>
-      <p>Vous n'avez pas de compte ?<a href="../signup/signup.html"> Créer un compte</a></p>
+      <p>Vous n'avez pas de compte ?<a href="../signup/signup.js"> Créer un compte</a></p>
     </form>
     {{/if}}
-    </div> 
-  </template>
+  </div> 
+</template>

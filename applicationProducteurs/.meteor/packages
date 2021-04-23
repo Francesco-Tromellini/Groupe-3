@@ -26,3 +26,7 @@ hot-module-replacement@0.2.0  # Update code in development without reloading the
 blaze-hot               # Update files using Blaze's API with HMR
 accounts-ui
 accounts-password
+ostrio:flow-router-extra
+kadira:blaze-layout
+themeteorchef:bert
+kadira:flow-router

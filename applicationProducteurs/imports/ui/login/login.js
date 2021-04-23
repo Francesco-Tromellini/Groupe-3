@@ -1,12 +1,11 @@
 import './login.html'
+import '../signup/signup.js'
 
-/*Template.login.rendered = function() {
+Template.login.rendered = function() {
     $('#login-link').addClass('selected');
-    $('#profile-link').removeClass('selected');
-    $('#classement-link').removeClass('selected');
-    $('#map-link').removeClass('selected');
+ 
   };
-*/
+
 Template.login.events({
     'submit .form-signin'(event) {
       const email = trimInput(event.target.email.value);
