@@ -3,10 +3,10 @@
 
 import './home.html';
 
-import '../login/login.js';
+/*import '../login/login.js';
 import '../signup/signup.js'
 import '../../lib/lib.js';
-import '../annonces/annonce.js';
+import '../annonces/annonce.js';*/
 
 
 // Définit les events qui se déroulent sur le template Home

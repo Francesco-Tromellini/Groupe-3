@@ -1,4 +1,5 @@
 import './signup.html'
+import '../choice/choice.js'
 
 
 /*Template.signup.rendered = function() {
