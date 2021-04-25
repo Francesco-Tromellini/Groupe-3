@@ -1,5 +1,5 @@
 import './login.html'
-import '../signup/signup.js'
+
 
 Template.login.rendered = function() {
     $('#login-link').addClass('selected');
@@ -21,7 +21,6 @@ Template.login.events({
             return false;
           }
           FlowRouter.go('home');
-          Bert.alert('Vous êtes maintenant connecté !', 'success', 'growl-top-right');
         });
       }
   
