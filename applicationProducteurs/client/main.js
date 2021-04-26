@@ -9,6 +9,7 @@ import '../imports/ui/signup/signup.js';
 import '../imports/ui/home/home.js';
 
 import '../imports/ui/visualisation/visualisation.js';
+import '../imports/ui/annonce/annonce.js'
 
 
 
