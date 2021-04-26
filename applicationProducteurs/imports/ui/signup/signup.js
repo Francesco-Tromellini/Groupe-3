@@ -48,7 +48,7 @@ let isNotEmpty = function(value) {
   if (value && value !== '') {
     return true;
   }
-  Bert.alert("S'il-vous-plaît remplissez tout les champs !", 'danger', 'growl-top-right');
+  Bert.alert("S'il-vous-plaît remplissez tous les champs !", 'danger', 'growl-top-right');
   return false;
 };
 
