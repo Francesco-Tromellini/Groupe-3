@@ -8,6 +8,8 @@ import '../imports/ui/login/login.js';
 import '../imports/ui/signup/signup.js';
 import '../imports/ui/home/home.js';
 
+import '../imports/ui/visualisation/visualisation.js';
+
 
 
 import '../lib/routing.js';
