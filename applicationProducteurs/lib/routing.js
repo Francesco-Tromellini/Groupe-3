@@ -23,3 +23,10 @@ FlowRouter.route('/signup', {
       BlazeLayout.render('signup');
   },
 });
+
+FlowRouter.route('/visualisation', {
+  name: 'visualisation',
+  action() {
+    BlazeLayout.render('visualisation');
+  },
+});

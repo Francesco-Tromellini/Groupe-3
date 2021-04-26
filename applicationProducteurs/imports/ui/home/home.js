@@ -1,9 +1,10 @@
 import { Template } from 'meteor/templating';
-import { FlowRouter } from 'meteor/kadira:flow-router';
+
 
 import './home.html'
 
 import '../../../lib/routing.js';
+
 
 Template.home.events({
     'click #btn3'(){
@@ -14,5 +15,11 @@ Template.home.events({
 Template.home.events({
     'click #btn4'(){
         FlowRouter.go('signup');
+    },
+});
+
+Template.home.events({
+    'click #btn5'(){
+        FlowRouter.go('visualisation');
     },
 });
