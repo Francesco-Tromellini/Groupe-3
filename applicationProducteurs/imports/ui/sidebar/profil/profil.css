@@ -1,0 +1,9 @@
+.profilepic {
+    height: 100px;
+    line-height: 100px;
+    width: 100px;
+    border: 1px black solid;
+    border-radius: 100px;
+    margin-left: 75px;
+    background-color: teal;
+  }
