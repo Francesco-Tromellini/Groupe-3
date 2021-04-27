@@ -1,3 +1,15 @@
 <template name="annonce">
-    <p>let's see if it works</p>
+    <div id="annonceForm-wrap">
+        <center>
+            <form action="" class="annonce-post">
+                <h3 class="annonceForm-heading">Créer une annonce</h3>
+                <label for="annonceName" class="sr-only">Titre de l'annonce</label>
+                <input type="text" name="annonceName" class="form-control" placeholder="Titre de l'annonce">
+                <label for="annnoncePost" class="sr-only">Description de l'annonce</label>
+                <input type="text" name="annoncePost" id="annoncePost" class="form-control" placeholder="Description">
+
+                <button class="btn btn-lg btn-success btn-block" type="submit">Créer une annonce</button>
+            </form>
+        </center>
+    </div>
 </template>
