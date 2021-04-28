@@ -3,8 +3,6 @@ import { Template } from 'meteor/templating';
 
 import './home.html'
 
-import '../../../lib/routing.js';
-
 
 Template.home.events({
     'click #btn3'(){
