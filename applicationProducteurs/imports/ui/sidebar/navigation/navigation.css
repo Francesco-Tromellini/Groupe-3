@@ -1,3 +1,12 @@
-.deroulant ul li {
-    display: hidden;
+.deroulant {
+    display: block;
+    border: 1px black solid;
+}
+
+.sous {
+    display: none;
+}
+
+.denr_sous {
+    display: none;
 }
