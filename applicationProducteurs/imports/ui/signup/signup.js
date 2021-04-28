@@ -58,7 +58,7 @@ isEmail = function(value) {
   if (filter.test(value)) {
     return true;
   }
-  Bert.alert("S'il-vous-plaît utilisez un eadresse E-mail valide !", 'danger', 'growl-top-right');
+  Bert.alert("S'il-vous-plaît utilisez une adresse E-mail valide !", 'danger', 'growl-top-right');
   return false;
 };
 
