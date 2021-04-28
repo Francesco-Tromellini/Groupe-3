@@ -20,7 +20,7 @@ Template.login.events({
             Bert.alert(err.reason, 'danger', 'growl-top-right');
             return false;
           }
-          FlowRouter.go('home');
+          FlowRouter.go('visualisation');
         });
       }
   
