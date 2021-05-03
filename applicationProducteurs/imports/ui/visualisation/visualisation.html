@@ -3,8 +3,16 @@
         <h2 id="listeannonce">
             Liste d'annonces
         </h2>
-    </center>
-    <p>{{> annonce}}</p>
-    {{> sidebar}}
-</template>  
+        <div id="annonceForm-wrap">
+        <form action="" class="annonce-post">
+            <h3 class="annonceForm-heading">Créer une annonce</h3>
+            <input type="text" name="annonceName" class="form-control" placeholder="Titre de l'annonce">
+            <input type="text" name="annoncePost" id="annoncePost" class="form-control" placeholder="Description">
 
+            <button class="btn btn-lg btn-success btn-block" type="submit">Créer une annonce</button>
+        </form>
+        <ul> {{#each objet}} {{> annonce}} {{/each}} </ul>
+        </div>
+    </center>
+    {{> sidebar}}
+</template>

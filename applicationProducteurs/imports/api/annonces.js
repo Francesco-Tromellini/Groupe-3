@@ -10,6 +10,6 @@ Meteor.methods({
         ObjetAnnonce.insert({
             text,
         });
-        console.log('success');
+        console.log(`success: ${text}`);
     },
 });
