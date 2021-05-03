@@ -1,8 +1,7 @@
-.deroulant {
-    display: block;
+.art {
     border: 1px black solid;
 }
 
-.sous {
-    display: none;
+.denr {
+    border: 1px black solid;
 }
