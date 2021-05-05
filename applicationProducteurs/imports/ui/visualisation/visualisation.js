@@ -20,13 +20,18 @@ Template.visualisation.helpers({
 Template.visualisation.events({
     'submit .annonce-post'(event){
 
+        // Prevent default element
         event.preventDefault();
+
         // Get value from form element
         const target = event.target;
-        const text =  target.annonceName.value;
+        let text =  target.annonceName.value;
+
+        
 
         // Insert the Annonce in the collection
-        Meteor.call('annonce.insert', text)
+        Meteor.call('annonce.insert', text);
+
         // Clear form
         target.annonceName.value = '';
         alert('votre annonce est publiéee');
