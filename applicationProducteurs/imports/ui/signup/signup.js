@@ -12,12 +12,9 @@ Template.signup.events({
       const email = trimInput(event.target.email.value);
       const password = trimInput(event.target.password.value);
       const password2 = trimInput(event.target.password2.value);
-      const identite =trimInput(event.target.formControlSelect.value);
-      
-      const producteur = document.getElementById('producteur');
-      const consommateur = document.getElementById('consommateur');
+      const identite = trimInput(event.target.formControlSelect.value);
+      console.log(event.target.formControlSelect.value)
 
-  
       if (isNotEmpty(email)
               && isNotEmpty(username)
               && isNotEmpty(password)
@@ -25,10 +22,12 @@ Template.signup.events({
               && areValidPasswords(password, password2)
               && isNotEmpty (identite)) {
         Accounts.createUser({
-          username,
-          email,
-          password,
-          identite,
+          username : username,
+          email : email,
+          password : password,
+          profile : {
+            role : identite
+          },
       
         },
         function(err) {
@@ -36,10 +35,10 @@ Template.signup.events({
             Bert.alert(err.reason, 'danger', 'growl-top-right');
           } else {
             Bert.alert('Account Created! You Are Now Logged In', 'success', 'growl-top-right');
-            if (indentite == producteur) {
-            FlowRouter.go('visualisation');
-            } else if (identite == consommateur) {
-              FlowRouter.go('consVisualisation')
+            if (identite == "producteur") {
+              setTimeout(() => FlowRouter.go('visualisation'), 200);
+            } else if (identite == "consommateur") {
+              setTimeout(() => FlowRouter.go('consVisualisation'), 200)
             }
           }
         });
