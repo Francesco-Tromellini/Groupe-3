@@ -12,23 +12,35 @@ Template.signup.events({
       const email = trimInput(event.target.email.value);
       const password = trimInput(event.target.password.value);
       const password2 = trimInput(event.target.password2.value);
+      const identite =trimInput(event.target.formControlSelect.value);
+      
+      const producteur = document.getElementById('producteur');
+      const consommateur = document.getElementById('consommateur');
+
   
       if (isNotEmpty(email)
               && isNotEmpty(username)
               && isNotEmpty(password)
               && isEmail(email)
-              && areValidPasswords(password, password2)) {
+              && areValidPasswords(password, password2)
+              && isNotEmpty (identite)) {
         Accounts.createUser({
           username,
           email,
           password,
+          identite,
+      
         },
         function(err) {
           if (err) {
             Bert.alert(err.reason, 'danger', 'growl-top-right');
           } else {
             Bert.alert('Account Created! You Are Now Logged In', 'success', 'growl-top-right');
+            if (indentite == producteur) {
             FlowRouter.go('visualisation');
+            } else if (identite == consommateur) {
+              FlowRouter.go('consVisualisation')
+            }
           }
         });
       }

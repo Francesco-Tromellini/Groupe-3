@@ -30,3 +30,10 @@ FlowRouter.route('/visualisation', {
     BlazeLayout.render('visualisation');
   },
 });
+
+FlowRouter.route('/consVisualisation', {
+  name: 'consVisualisation',
+  action () {
+    BlazeLayout.render('consVisualisation');
+  },
+});

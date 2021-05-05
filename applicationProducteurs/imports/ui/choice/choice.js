@@ -1,1 +1,2 @@
-import './choice.html'
+import './choice.html';
+
