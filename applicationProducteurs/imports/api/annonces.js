@@ -5,6 +5,7 @@ import { Mongo } from 'meteor/mongo';
 export const ObjetAnnonce = new Mongo.Collection('ObjetAnnonce');
 
 // Ecriture des methodes
+/*
 Meteor.methods({
     'annonce.insert'(text){
         let ajout = ObjetAnnonce.insert({
@@ -15,3 +16,4 @@ Meteor.methods({
         return ajout;
     },
 });
+*/

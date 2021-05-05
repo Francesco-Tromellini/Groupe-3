@@ -25,16 +25,26 @@ Template.visualisation.events({
 
         // Get value from form element
         const target = event.target;
-        let text =  target.annonceName.value;
-        let textdes = target.annoncePost.value;
+        let descriptionVal =  target.annoncePost.value;
+        let titreVal = target.annonceName.value;
 
         // Insert the Annonce in the collection
-        Meteor.call('annonce.insert', text);
-        Meteor.call('annonce.insert', textdes);
+        /*Meteor.call('annonce.insert', text);
+        Meteor.call('annonce.insert', textdes);*/
 
-        // Clear form
-        target.annonceName.value = '';
-        target.annoncePost.value = '';
-        alert('votre annonce est publiéee');
+        if(titreVal != '' && descriptionVal != ''){
+            ObjetAnnonce.insert({
+                title : titreVal,
+                description : descriptionVal,
+                createdAt : new Date(),
+            });
+            
+            // Clear form
+            target.annonceName.value = '';
+            target.annoncePost.value = '';
+            alert('votre annonce est publiéee');
+        } else { 
+            alert('Veuillez remplir tous les champs');
+        }
     },
 });
