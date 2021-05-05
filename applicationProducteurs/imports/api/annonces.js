@@ -8,7 +8,8 @@ export const ObjetAnnonce = new Mongo.Collection('ObjetAnnonce');
 Meteor.methods({
     'annonce.insert'(text){
         let ajout = ObjetAnnonce.insert({
-            contenu : text,
+            text : text,
+            titre : text,
         });
         console.log(`success: ${text}`);
         return ajout;
