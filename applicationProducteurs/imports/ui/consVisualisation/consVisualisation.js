@@ -1,1 +1,1 @@
-import './consVisualisation';
+import './consVisualisation.html';
