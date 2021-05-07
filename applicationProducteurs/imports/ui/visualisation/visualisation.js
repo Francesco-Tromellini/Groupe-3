@@ -27,21 +27,25 @@ Template.visualisation.events({
         const target = event.target;
         let descriptionVal =  target.annoncePost.value;
         let titreVal = target.annonceName.value;
+        let codePostalVal = target.annonceCode.value;
+        //let imgVal = target['annonceImage'].files;
 
         // Insert the Annonce in the collection
         /*Meteor.call('annonce.insert', text);
         Meteor.call('annonce.insert', textdes);*/
 
-        if(titreVal != '' && descriptionVal != ''){
+        if(titreVal != '' && descriptionVal != '' && codePostalVal != ''){
             ObjetAnnonce.insert({
                 title : titreVal,
                 description : descriptionVal,
+                postalCode : codePostalVal,
                 createdAt : new Date(),
             });
             
             // Clear form
             target.annonceName.value = '';
             target.annoncePost.value = '';
+            target.annonceCode.value='';
             alert('votre annonce est publiéee');
         } else { 
             alert('Veuillez remplir tous les champs');
