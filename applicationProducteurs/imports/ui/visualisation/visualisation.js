@@ -4,6 +4,7 @@ import '../annonce/annonce.js';
 import '../sidebar/sidebar.js';
 
 
+
 // Mots clef
 import { Template } from 'meteor/templating';
 import { Meteor } from 'meteor/meteor';
