@@ -12,6 +12,7 @@ import '../imports/ui/visualisation/visualisation.js';
 import '../imports/ui/annonce/annonce.js';
 import '../imports/ui/consVisualisation/consVisualisation.js';
 
+
 import '../imports/ui/sidebar/sidebar.js';
 
 
