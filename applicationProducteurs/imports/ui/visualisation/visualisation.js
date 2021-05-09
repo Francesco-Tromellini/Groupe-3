@@ -3,6 +3,7 @@ import './visualisation.html';
 import '../annonce/annonce.js';
 import '../sidebar/sidebar.js';
 
+
 // Mots clef
 import { Template } from 'meteor/templating';
 import { Meteor } from 'meteor/meteor';
@@ -11,6 +12,8 @@ import { Meteor } from 'meteor/meteor';
 // Importer DB
 import { ObjetAnnonce } from '../../api/annonces.js';
 
+
+
 Template.visualisation.helpers({
     objet () {
         return ObjetAnnonce.find({}, { sort: { createdAt: 1}});
@@ -18,7 +21,7 @@ Template.visualisation.helpers({
 });
 
 Template.visualisation.events({
-    'submit .annonce-post'(event){
+    'submit .annonce-post' : function (event){
 
         // Prevent default element
         event.preventDefault();
@@ -28,7 +31,10 @@ Template.visualisation.events({
         let descriptionVal =  target.annoncePost.value;
         let titreVal = target.annonceName.value;
         let codePostalVal = target.annonceCode.value;
-        let imgVal = target['annonceImage'].files;
+        let imgVal = target['annonceImage'].value;
+        console.log(imgVal)
+
+
 
         // Insert the Annonce in the collection
         if(titreVal != '' && descriptionVal != '' && codePostalVal != ''){
@@ -44,7 +50,7 @@ Template.visualisation.events({
             target.annonceName.value = '';
             target.annoncePost.value = '';
             target.annonceCode.value='';
-            alert('votre annonce est publiéee');
+            alert('Votre annonce est publiéee');
         } else { 
             alert('Veuillez remplir tous les champs');
         }
