@@ -1,1 +1,0 @@
-import './cons_likes.html';

@@ -1,10 +1,8 @@
 import './navigation.html';
-import './navigation.css';
-
 //event 1er sous menu
-/*Template.navigation.events({
-    'mouseover .art': function() {
-            const a = document.getElementsByClassName('art_sous');
+Template.navigation.events({
+    'mouseover .mesannonces': function() {
+            const a = document.getElementsByClassName('mesannonces_sous');
             for (let i = 0; i <= 1; i++) {
                 a[i].style.display = 'block';
             }
@@ -12,8 +10,8 @@ import './navigation.css';
 });
 
 Template.navigation.events({
-    'mouseout .art': function() {
-            const a = document.getElementsByClassName('art_sous');
+    'mouseout .mesannonces': function() {
+            const a = document.getElementsByClassName('mesannonces_sous');
             for (let i = 0; i <= 1; i++) {
                 a[i].style.display = 'none';
             }
@@ -21,7 +19,7 @@ Template.navigation.events({
 });
 
 // event 2e sous menu
-Template.navigation.events({
+/*Template.navigation.events({
     'mouseover .denr': function() {
             const d = document.getElementsByClassName('denr_sous');
             for (let i = 0; i <= 1; i++) {
