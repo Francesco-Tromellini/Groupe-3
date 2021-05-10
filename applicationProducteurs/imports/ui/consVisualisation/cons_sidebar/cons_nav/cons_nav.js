@@ -1,8 +1,7 @@
-import './navigation.html';
-import './navigation.css';
+import './cons_nav.html';
+import './cons_nav.css';
 
-//event 1er sous menu
-/*Template.navigation.events({
+Template.cons_navigation.events({
     'mouseover .art': function() {
             const a = document.getElementsByClassName('art_sous');
             for (let i = 0; i <= 1; i++) {
@@ -11,7 +10,7 @@ import './navigation.css';
     }
 });
 
-Template.navigation.events({
+Template.cons_navigation.events({
     'mouseout .art': function() {
             const a = document.getElementsByClassName('art_sous');
             for (let i = 0; i <= 1; i++) {
@@ -21,7 +20,7 @@ Template.navigation.events({
 });
 
 // event 2e sous menu
-Template.navigation.events({
+Template.cons_navigation.events({
     'mouseover .denr': function() {
             const d = document.getElementsByClassName('denr_sous');
             for (let i = 0; i <= 1; i++) {
@@ -30,11 +29,11 @@ Template.navigation.events({
     }
 });
 
-Template.navigation.events({
+Template.cons_navigation.events({
     'mouseout .denr': function() {
             const d = document.getElementsByClassName('denr_sous');
             for (let i = 0; i <= 1; i++) {
                 d[i].style.display = 'none';
             }
     }
-});*/
+});
