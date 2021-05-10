@@ -2,9 +2,6 @@ import './signup.html'
 import '../choice/choice.js'
 
 
-Template.signup.rendered = function() {
-
-};
 
 Template.signup.events({
     'submit .form-signup'(event) {

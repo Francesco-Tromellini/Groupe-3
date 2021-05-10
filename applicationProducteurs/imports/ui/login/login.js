@@ -4,10 +4,6 @@ import '../signup/signup.js';
 import { Meteor } from 'meteor/meteor';
 
 
-Template.login.rendered = function() {
-    $('#login-link').addClass('selected');
- 
-  };
 
 Template.login.events({
     'submit .form-signin'(event) {
