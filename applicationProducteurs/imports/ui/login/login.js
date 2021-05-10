@@ -13,6 +13,7 @@ Template.login.events({
     'submit .form-signin'(event) {
       const email = trimInput(event.target.email.value);
       const password = trimInput(event.target.password.value);
+      
       const identite = Meteor.user().profile.role.value;
       console.log(identite)
 
