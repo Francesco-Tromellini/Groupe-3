@@ -31,3 +31,6 @@ kadira:blaze-layout
 themeteorchef:bert
 kadira:flow-router
 msavin:mongol
+cfs:standard-packages
+cfs:gridfs
+ostrio:files
