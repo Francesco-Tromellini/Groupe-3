@@ -5,12 +5,13 @@ import { Meteor } from 'meteor/meteor';
 
 
 
+
 Template.login.events({
     'submit .form-signin'(event) {
       const email = trimInput(event.target.email.value);
       const password = trimInput(event.target.password.value);
       
-      const identite = Meteor.user().profile.role.value;
+      let identite = Meteor.user().profile.role;
       console.log(identite)
 
 
@@ -22,7 +23,8 @@ Template.login.events({
           if (err) {
             Bert.alert(err.reason, 'danger', 'growl-top-right');
             return false;
-          } 
+          }
+          
           if (identite == "producteur") {
             setTimeout(() => FlowRouter.go('visualisation'), 200);
           } else if (identite == "consommateur") {
