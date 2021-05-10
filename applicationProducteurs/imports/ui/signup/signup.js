@@ -13,6 +13,7 @@ Template.signup.events({
       const password = trimInput(event.target.password.value);
       const password2 = trimInput(event.target.password2.value);
       const identite = trimInput(event.target.formControlSelect.value);
+      let likes = 0; 
       console.log(event.target.formControlSelect.value)
 
       if (isNotEmpty(email)
@@ -26,7 +27,8 @@ Template.signup.events({
           email : email,
           password : password,
           profile : {
-            role : identite
+            role : identite,
+            likes : likes
           },
       
         },

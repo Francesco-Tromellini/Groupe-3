@@ -1,4 +1,7 @@
-import './login.html'
+import './login.html';
+import '../signup/signup.js';
+
+import { Meteor } from 'meteor/meteor';
 
 
 Template.login.rendered = function() {
@@ -10,7 +13,10 @@ Template.login.events({
     'submit .form-signin'(event) {
       const email = trimInput(event.target.email.value);
       const password = trimInput(event.target.password.value);
-  
+      const identite = Meteor.user().profile.role.value;
+      console.log(identite)
+
+
       if (isNotEmpty(email)
               && isNotEmpty(password)
               && isEmail(email)
@@ -19,8 +25,13 @@ Template.login.events({
           if (err) {
             Bert.alert(err.reason, 'danger', 'growl-top-right');
             return false;
+          } 
+          if (identite == "producteur") {
+            setTimeout(() => FlowRouter.go('visualisation'), 200);
+          } else if (identite == "consommateur") {
+            setTimeout(() => FlowRouter.go('consVisualisation'), 200)
           }
-          FlowRouter.go('visualisation');
+          //FlowRouter.go('visualisation');
         });
       }
   
