@@ -1,7 +1,5 @@
 import './consVisualisation.html';
 import './cons_sidebar/cons_side.js';
-import '../visualisation/visualisation.js'
-
 import '../annonce/annonce.js';
 import '../sidebar/sidebar.js';
 
