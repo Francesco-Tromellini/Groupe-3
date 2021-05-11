@@ -1,4 +1,5 @@
-import './consVisualisation.html';
+//CODE QUI NE MARCHE PAS
+/*import './consVisualisation.html';
 import './cons_sidebar/cons_side.js';
 import '../annonce/annonce.js';
 import '../sidebar/sidebar.js';
@@ -13,4 +14,4 @@ Template.visualisation.helpers({
     objet () {
         return ObjetAnnonce.find({}, { sort: { createdAt: 1}});
     },
-});
+});*/
