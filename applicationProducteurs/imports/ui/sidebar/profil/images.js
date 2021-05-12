@@ -50,3 +50,5 @@ Template.uploadForm.onCreated(function () {
       }
     }
   });
+
+  
