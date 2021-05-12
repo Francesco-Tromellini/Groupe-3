@@ -1,9 +1,9 @@
 import { Mongo } from 'meteor/mongo';
 
-//import { FilesCollection} from 'meteor/ostrio:files';
 
 // Variable DB
 export const ObjetAnnonce = new Mongo.Collection('ObjetAnnonce');
+
 
 
 /*
