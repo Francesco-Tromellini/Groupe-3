@@ -6,8 +6,9 @@ import Images from '../../../api/images.js';
 //afficher l'image
 Template.profil.helpers({
     imageFile() {
-        const image = Images.find({});
-        return Images.findOne();
+
+        return Images.findOne()
+
     }
 });
 
