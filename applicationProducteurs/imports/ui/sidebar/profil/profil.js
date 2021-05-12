@@ -1,7 +1,9 @@
 import './profil.html';
 import './profil.css';
+import './images.js';
 
 
+/* CODE POUR L'INSTANT QUI NE MARCHE PAS EN LIEN AVEC L'IMAGE
 Template.profil.events({
     //commit to the db
     "submit .edit-profile": function(event) {
@@ -13,3 +15,4 @@ Template.profil.events({
         }
     }
 })
+*/
