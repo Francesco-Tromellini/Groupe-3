@@ -11,7 +11,6 @@ import '../imports/ui/home/home.js';
 import '../imports/ui/visualisation/visualisation.js';
 import '../imports/ui/annonce/annonce.js';
 import '../imports/ui/consVisualisation/consVisualisation.js';
-
-
+import '../imports/ui/annonce/upImg.js'
 
 import '../lib/routing.js';
