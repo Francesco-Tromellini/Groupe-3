@@ -30,7 +30,7 @@ Template.uploadForm.onCreated(function () {
           var uploadInstance = Images.insert({
             file: file,
             chunkSize: 'dynamic',
-            createdAt: new Date(),
+            createdAt: new Date()
           }, false);
   
           uploadInstance.on('start', function() {
