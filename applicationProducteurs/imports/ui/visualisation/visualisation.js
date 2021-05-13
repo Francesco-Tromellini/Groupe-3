@@ -37,10 +37,6 @@ Template.visualisation.events({
         let descriptionVal =  target.annoncePost.value;
         let titreVal = target.annonceName.value;
         let codePostalVal = target.annonceCode.value;
-        let imgVal = target['annonceImage'].value;
-        
-        
-        console.log(imgVal)
 
         // Insert the Annonce in the collection
         if(titreVal != '' && descriptionVal != '' && codePostalVal != ''){
@@ -48,7 +44,6 @@ Template.visualisation.events({
                 title : titreVal,
                 description : descriptionVal,
                 postalCode : codePostalVal,
-                photo : imgVal,
                 createdAt : new Date(),
             });
             
@@ -62,44 +57,3 @@ Template.visualisation.events({
         }
     },
 });
-
-Template.visualisation.onCreated(function () {
-    this.currentUpload = new ReactiveVar(false);
-  });
-
-  Template.visualisation.helpers({
-    currentUpload: function () {
-      return Template.instance().currentUpload.get();
-    }
-  });
-  
-  Template.visualisation.events({
-    'change #fileInput': function (e, template) {
-      if (e.currentTarget.files && e.currentTarget.files[0]) {
-        // We upload only one file, in case
-        // there was multiple files selected
-        var file = e.currentTarget.files[0];
-        if (file) {
-          var uploadInstance = ImagesAnnonces.insert({
-            file: file,
-            chunkSize: 'dynamic'
-          }, false);
-  
-          uploadInstance.on('start', function() {
-            template.currentUpload.set(this);
-          });
-  
-          uploadInstance.on('end', function(error, fileObj) {
-            if (error) {
-              window.alert('Error during upload: ' + error.reason);
-            } else {
-              window.alert('File "' + fileObj.name + '" successfully uploaded');
-            }
-            template.currentUpload.set(false);
-          });
-  
-          uploadInstance.start();
-        }
-      }
-    }
-  });

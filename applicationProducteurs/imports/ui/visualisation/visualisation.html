@@ -7,11 +7,12 @@
         <form action="" class="annonce-post">
             <h3 class="annonceForm-heading">Créer une annonce</h3>
             <input type="text" name="annonceName" class="form-control" placeholder="Titre de l'annonce">
-            <input type="file" name="annonceImage" class=".upload" accept=".jpg, .jpeg, .png">
             <input type="text" name="annoncePost" id="annoncePost" class="form-control" placeholder="Description">
+            {{> uploadFormAnnonces}}
             <input type="number" name="annonceCode" class="form-control" placeholder="Code Postal">
             <button class="btn btn-lg btn-success btn-block" type="submit">Créer une annonce</button>
         </form>
+        <br>
         <br>
         <div class="">
              {{#each objet}} {{> annonce}} {{/each}} 
@@ -21,12 +22,4 @@
     {{> sidebar}}
 </template>
 
-<template name="uploadFormAnnonces">
-    {{#with currentUpload}}
-      Uploading <b>{{file.name}}</b>: 
-      <span id="progress">{{progress.get}}%</span>
-    {{else}}
-      <input id="fileInput" type="file" />
-      <p><small>Upload file in <code>jpeg</code> or <code>png</code> format, with size less or equal to 10MB</small></p>
-    {{/with}}
-</template>
+
