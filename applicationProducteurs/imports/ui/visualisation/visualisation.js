@@ -2,6 +2,7 @@ import './visualisation.css';
 import './visualisation.html';
 import '../annonce/annonce.js';
 import '../sidebar/sidebar.js';
+import './filtre.js'
 
 import ImagesAnnonces from '../../api/annonces.js';
 
@@ -28,10 +29,10 @@ Template.visualisation.helpers({
 
 Template.visualisation.events({
     'submit .annonce-post' : function (event){
+        console.log("template annonce activé")
 
         // Prevent default element
         event.preventDefault();
-
         // Get value from form element
         const target = event.target;
         let descriptionVal =  target.annoncePost.value;
