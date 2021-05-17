@@ -1,11 +1,12 @@
-<template name="consVisualisation">
-   <p style="text-align: center;">Consommateur</p>
-        <h2 id="listeannonce">
-            Liste d'annonces
-        </h2>
-        <br>
-        <div class="a">
+<body>
+<h2 id="titre">
+    Liste d'annonces
+</h2>
+</body>
 
-            bonjour
-        </div>   
+<template name="consVisualisation">
+    <ul>
+             {{#each objet}} {{> annonce}} {{/each}} 
+    </ul>
+    {{> sidebar}}
 </template>
