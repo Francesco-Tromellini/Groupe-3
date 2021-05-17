@@ -21,3 +21,9 @@ Template.home.events({
         FlowRouter.go('visualisation');
     },
 });
+
+    Template.home.events({
+        'click #btn6'(){
+            FlowRouter.go('consVisualisation');
+        },
+});
