@@ -2,7 +2,7 @@ import './visualisation.css';
 import './visualisation.html';
 import '../annonce/annonce.js';
 import '../sidebar/sidebar.js';
-//import './filtre.js'
+import './filtre.js'
 
 import ImagesAnnonces from '../../api/annonces.js';
 
@@ -38,7 +38,8 @@ Template.visualisation.events({
         let descriptionVal =  target.annoncePost.value;
         let titreVal = target.annonceName.value;
         let codePostalVal = target.annonceCode.value;
-        //mettre une valuer avec ca let filtreAnnonce = target.
+        let filtreAnnonce = document.getElementById("filtres-select");
+        let filtreSelected = filtreAnnonce.value
 
         // Insert the Annonce in the collection
         if(titreVal != '' && descriptionVal != '' && codePostalVal != ''){
@@ -46,6 +47,7 @@ Template.visualisation.events({
                 title : titreVal,
                 description : descriptionVal,
                 postalCode : codePostalVal,
+                filtreSelected : filtreSelected,
                 createdAt : new Date(),
             });
             

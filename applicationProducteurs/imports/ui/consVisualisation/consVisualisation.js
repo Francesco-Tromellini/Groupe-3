@@ -5,4 +5,4 @@ import './cons_sidebar/cons_side.js';
 import './consAnnonces/consAnnonces.js';
 
 // Mots clef
-import { Template } from 'meteor/templating';
+//import { Template } from 'meteor/templating';
