@@ -2,7 +2,6 @@ import './consVisualisation.html';
 import './consVisualisation.css';
 import '../annonce/annonce.js';
 import './cons_sidebar/cons_side.js';
-import './consAnnonces/consAnnonces.js';
 import '../../api/annonces.js';
 
 // Mots clef
