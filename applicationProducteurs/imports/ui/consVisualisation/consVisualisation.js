@@ -3,7 +3,7 @@ import './consVisualisation.html';
 // import './cons_sidebar/cons_side.js';
 import './consVisualisation.css';
 import '../annonce/annonce.js';
-import '../sidebar/sidebar.js';
+import './cons_sidebar/cons_side.js';
 
 // Mots clef
 import { Template } from 'meteor/templating';
