@@ -2,7 +2,7 @@ import './visualisation.css';
 import './visualisation.html';
 import '../annonce/annonce.js';
 import '../sidebar/sidebar.js';
-import './filtre.js'
+//import './filtre.js'
 
 import ImagesAnnonces from '../../api/annonces.js';
 
