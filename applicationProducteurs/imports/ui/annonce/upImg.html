@@ -1,3 +1,4 @@
+<!--Template pour le Form de l'image-->
 <template name="uploadFormAnnonces">
     {{#with currentUpload}}
       Uploading <b>{{file.name}}</b>: 
@@ -8,15 +9,15 @@
     {{/with}}
 </template>
 
+<!--Template pour l'affichage de l'image-->
 <template name="uploadedFilesAnnonces">
     {{#if uploadedFiles.count}}
-      <ul>
+      <p>
         {{#each file in uploadedFiles.each}}
-          <li>
-            <a href="{{file.link}}?download=true" download="{{file.name}}">{{file.name}}</a>
-          </li>
+            <!-- <a href="{{file.link}}?download=true" download="{{file.name}}">{{file.name}}</a> -->
+            <img src="{{file.link}}?download=true" alt="Image du produit" height="150px" width="150px">
         {{/each}}
-      </ul>
+        </p>
     {{else}}
       <div>No files uploaded, yet</div>
     {{/if}}

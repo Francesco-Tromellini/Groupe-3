@@ -1,29 +1,24 @@
+// Importations
 import './visualisation.css';
 import './visualisation.html';
 import '../annonce/annonce.js';
 import '../sidebar/sidebar.js';
-import './filtre.js'
-
-import ImagesAnnonces from '../../api/annonces.js';
+import './filtre.js';
 
 // Mots clef
 import { Template } from 'meteor/templating';
 
 // Importer DB
 import { ObjetAnnonce } from '../../api/annonces.js';
+import { ImagesAnnonces } from '../../api/annonces.js';
 
-
-
-//afficher l'image
-Template.visualisation.helpers({
-    imageFile() {
-        return ImagesAnnonces.findOne();
-    }
-});
-
+// Affichier l'image et l'annonce
 Template.visualisation.helpers({
     objet () {
         return ObjetAnnonce.find({}, { sort: { createdAt: 1}});
+    },
+    imageFile() {
+        return ImagesAnnonces.findOne();
     },
 });
 
