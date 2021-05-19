@@ -1,11 +1,11 @@
-/*import { Template } from 'meteor/templating';
+//import { Template } from 'meteor/templating';
 //import { Meteor } from 'meteor/meteor';
 import './filtre.html';
 //import { ObjetAnnonce } from '../../api/annonces';
 
 //mettre les filtres dans une base de données
 //evénement change pour select
-
+/*
 Template.filtres.events({
     'click .filtres' : function (event) {
         event.preventDefault();
