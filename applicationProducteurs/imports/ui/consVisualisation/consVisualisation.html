@@ -2,7 +2,10 @@
 <template name="consVisualisation">
     <h2 id="titre" style='text-align: center;'>
         Liste d'annonces
+        {{#each objet}} 
+        {{> annonce}} 
+        {{/each}} 
     </h2>
-    {{> consAnnonces}}
+    
     {{> cons_sidebar}}
 </template>
