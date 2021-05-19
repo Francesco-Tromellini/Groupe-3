@@ -1,8 +1,13 @@
 <template name="cons_sidebar">
     <div class="cons_sidenav">
+        
+        
         {{> cons_profil}}
         {{> cons_navigation}}
+        <p>Modifier votre photo de profil :
+            {{>uploadForm}}
+        </p> 
         <br><br>
-        <a class="link-purple logout" href="./login" id="logout-link"><i class="fa fa-sign-out"></i>Se déconnecter</a>
+        
     </div>
   </template>
