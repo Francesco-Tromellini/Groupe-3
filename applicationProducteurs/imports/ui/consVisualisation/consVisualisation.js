@@ -1,9 +1,8 @@
-//CODE QUI NE MARCHE PAS
 import './consVisualisation.html';
-// import './cons_sidebar/cons_side.js';
 import './consVisualisation.css';
-import '../annonce/annonce.js';
+//import '../annonce/annonce.js';
 import './cons_sidebar/cons_side.js';
+import './consAnnonces/consAnnonces.js';
 
 // Mots clef
 import { Template } from 'meteor/templating';

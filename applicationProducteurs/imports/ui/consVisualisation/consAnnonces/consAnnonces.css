@@ -7,3 +7,9 @@
 div {
     margin: 1%;
 }
+
+.card {
+    text-align: center;
+    margin-left: 300px;
+    width: 200px;
+}
