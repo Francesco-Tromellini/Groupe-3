@@ -29,7 +29,7 @@ Template.visualisation.helpers({
 
 Template.visualisation.events({
     'submit .annonce-post' : function (event){
-        console.log("template annonce activé")
+        
 
         // Prevent default element
         event.preventDefault();
@@ -38,6 +38,7 @@ Template.visualisation.events({
         let descriptionVal =  target.annoncePost.value;
         let titreVal = target.annonceName.value;
         let codePostalVal = target.annonceCode.value;
+        //mettre une valuer avec ca let filtreAnnonce = target.
 
         // Insert the Annonce in the collection
         if(titreVal != '' && descriptionVal != '' && codePostalVal != ''){
