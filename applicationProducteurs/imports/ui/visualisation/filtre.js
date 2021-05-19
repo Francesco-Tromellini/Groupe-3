@@ -5,7 +5,7 @@ import './filtre.html';
 import { ObjetAnnonce } from '../../api/annonces';
 
 Template.filtres.events({
-    'submit .form-filtres' : function (event) {
+    'click .filtres' : function (event) {
         event.preventDefault();
 
         let bijoux = document.getElementById('bijoux');
@@ -23,7 +23,6 @@ Template.filtres.events({
         if (bijoux.checked == true) {
             bijouxTableau.push(bijoux.value);
             console.log("réussi")
-
         } else if (vêtements.checked == true) {
             vêtementsTableau.push(vêtements.value);
         } else if (maraîcher.checked == true) {
@@ -38,7 +37,12 @@ Template.filtres.events({
             maraîcherTableau,
             poissonierTableau,
         };
+        
 
+        ObjetAnnonce.insert({
+            checkboxAnnonce : tableauFiltres,
+
+        });
     
        Meteor.call('ObjetAnnonce.add', tableauFiltres, (err) => {
             if (err) {
