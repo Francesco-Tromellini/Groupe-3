@@ -6,11 +6,20 @@
         <div id="annonceForm-wrap" class="form-group">
         <form action="" class="annonce-post">
             <h3 class="annonceForm-heading">Créer une annonce</h3>
-            <input type="text" name="annonceName" class="form-control" placeholder="Titre de l'annonce">
-            <input type="text" name="annoncePost" id="annoncePost" class="form-control" placeholder="Description">
-            {{> uploadFormAnnonces}}
-           <p>Type de produit : {{> filtres}}</p>
-            <input type="number" name="annonceCode" class="form-control" placeholder="Code Postal">
+            <div class="row">
+                <input type="text" name="annonceName" class="form-control" placeholder="Titre de l'annonce">
+            </div>
+            <div class="row">
+                <input type="text" name="annoncePost" id="annoncePost" class="form-control" placeholder="Description">
+            </div>
+            <div class="row">
+                <input type="number" name="annonceCode" class="form-control" placeholder="Code Postal">
+            </div>
+            <div class="row">
+                <div class="colon">{{> uploadFormAnnonces}}</div>
+                <div class="colon">Type de produit : {{> filtres}}</div>
+            </div>
+            
             <button class="btn btn-lg btn-success btn-block" type="submit">Créer une annonce</button>
         </form>
         <br>

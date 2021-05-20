@@ -1,11 +1,23 @@
 <!--Start definition template Annonces pour affichage sur la page ACCUEIL-->
 <template name="annonce">
-    <div class="card" >
-            <h4>{{title}}</h4>
-            <span>{{description}}</span>
-            <br>
-            <span>{{> uploadedFilesAnnonces}}</span>
-            <span>Code postal : <strong>{{postalCode}}</strong></span>
-            <span style="color: blueviolet;">{{filtreSelected}}</span>
+    <div class="card" style="background-color: rgba(43, 226, 73, 0.315);">
+            <h4 style="color: green;">{{title}}</h4>
+            <div class="row">
+                <div class="col">
+                    <h6 style="color: green;">Description du produit</h6>
+                    <span>{{description}}</span>
+                </div>
+                <div class="col">
+                    <span>{{> uploadedFilesAnnonces}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span>Code postal : <strong style="color: blue">{{postalCode}}</strong></span>
+                </div>
+                <div class="col">
+                    <span>Type de produit : <strong style="color: blueviolet;">{{filtreSelected}}</strong></span>
+                </div>
+            </div>
     </div>
 </template>
