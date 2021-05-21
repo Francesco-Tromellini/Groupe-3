@@ -14,45 +14,43 @@ import { ImagesAnnonces } from '../../api/annonces.js';
 
 // Affichier l'image et l'annonce
 Template.visualisation.helpers({
-    objet () {
-        return ObjetAnnonce.find({}, { sort: { createdAt: 1}});
-    },
-    imageFile() {
-        return ImagesAnnonces.findOne();
-    },
+  objet() {
+    return ObjetAnnonce.find({}, { sort: { createdAt: 1 } });
+  },
+  imageFile() {
+    return ImagesAnnonces.findOne();
+  },
 });
 
 Template.visualisation.events({
-    'submit .annonce-post' : function (event){
-        
+  'submit .annonce-post': function (event) {
+    // Prevent default element
+    event.preventDefault();
+    // Get value from form element
+    const target = event.target;
+    let descriptionVal = target.annoncePost.value;
+    let titreVal = target.annonceName.value;
+    let codePostalVal = target.annonceCode.value;
+    let filtreAnnonce = document.getElementById('filtres-select');
+    let filtreSelected = filtreAnnonce.value;
 
-        // Prevent default element
-        event.preventDefault();
-        // Get value from form element
-        const target = event.target;
-        let descriptionVal =  target.annoncePost.value;
-        let titreVal = target.annonceName.value;
-        let codePostalVal = target.annonceCode.value;
-        let filtreAnnonce = document.getElementById("filtres-select");
-        let filtreSelected = filtreAnnonce.value
+    // Insert the Annonce in the collection
+    if (titreVal != '' && descriptionVal != '' && codePostalVal != '') {
+      ObjetAnnonce.insert({
+        title: titreVal,
+        description: descriptionVal,
+        postalCode: codePostalVal,
+        filtreSelected: filtreSelected,
+        createdAt: new Date(),
+      });
 
-        // Insert the Annonce in the collection
-        if(titreVal != '' && descriptionVal != '' && codePostalVal != ''){
-            ObjetAnnonce.insert({
-                title : titreVal,
-                description : descriptionVal,
-                postalCode : codePostalVal,
-                filtreSelected : filtreSelected,
-                createdAt : new Date(),
-            });
-            
-            // Clear form
-            target.annonceName.value = '';
-            target.annoncePost.value = '';
-            target.annonceCode.value='';
-            alert('Votre annonce est publiéee');
-        } else { 
-            alert('Veuillez remplir tous les champs');
-        }
-    },
+      // Clear form
+      target.annonceName.value = '';
+      target.annoncePost.value = '';
+      target.annonceCode.value = '';
+      alert('Votre annonce est publiéee');
+    } else {
+      alert('Veuillez remplir tous les champs');
+    }
+  },
 });

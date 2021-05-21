@@ -10,10 +10,10 @@ import { Template } from 'meteor/templating';
 import { ObjetAnnonce } from '../../api/annonces.js';
 
 Template.consVisualisation.helpers({
-    objet () {
-        return ObjetAnnonce.find({}, { sort: { createdAt: 1}});
-    },
-    imageFile() {
-        return ImagesAnnonces.findOne();
-    },
+  objet() {
+    return ObjetAnnonce.find({}, { sort: { createdAt: 1 } });
+  },
+  imageFile() {
+    return ImagesAnnonces.findOne();
+  },
 });

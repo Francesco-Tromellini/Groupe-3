@@ -7,14 +7,11 @@ import { ObjetAnnonce } from '../../api/annonces';
 //evénement change pour select
 
 Template.filtres.events({
-    'change select' : function (event) {
-        event.preventDefault();
+  'change select': function (event) {
+    event.preventDefault();
 
-        let selectedFilter = event.target.value;
+    let selectedFilter = event.target.value;
 
-        console.log(selectedFilter)
-
-
-    }
+    console.log(selectedFilter);
+  },
 });
-
