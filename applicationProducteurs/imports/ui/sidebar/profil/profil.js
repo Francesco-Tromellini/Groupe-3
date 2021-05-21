@@ -1,6 +1,8 @@
 import './profil.html';
 import './profil.css';
 import './images.js';
+import '../sidebar.js'
+
 import Images from '../../../api/images.js';
 
 //afficher l'image

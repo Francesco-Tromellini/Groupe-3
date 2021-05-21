@@ -1,6 +1,8 @@
 import './signup.html';
 import '../choice/choice.js';
 
+
+
 Template.signup.events({
   'submit .form-signup'(event) {
     const username = trimInput(event.target.username.value);
@@ -27,7 +29,7 @@ Template.signup.events({
           profile: {
             role: identite,
             likes: 0,
-            //idProfil: à remplir
+            idProfil: '',
           },
         },
         function (err) {

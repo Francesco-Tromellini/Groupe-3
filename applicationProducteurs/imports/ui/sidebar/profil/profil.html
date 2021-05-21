@@ -1,15 +1,13 @@
 <template name="profil">
     <center>
-        
-        
-        <img src="{{imageFile.link}}" alt="{{imageFile.name}}" style="height: 150px; width: 150px;"/>
-        
-         <br>
-        <div class="username">Pseudo: {{currentUser.username}}</div>
+        <div class="col">
+            <span>{{> uploadedFiles}}</span>
+        </div>
         <br>
-        
-
-
+        <div class="username">
+            Pseudo: {{currentUser.username}}
+        </div>
+    
     </center>
 </template> 
 

@@ -1,14 +1,15 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
+import { Session } from 'meteor/session';
 import Images from '../../../api/images.js';
-
 import './images.html';
 
-/*Template.uploadedFiles.helpers({
-  uploadedFiles: function () {
-    return Images.find();
+
+Template.uploadedFiles.helpers({
+  file: function () {
+    return Images.findOne({_id: this.idProfil});
   },
-});*/
+});
 
 Template.uploadForm.onCreated(function () {
   this.currentUpload = new ReactiveVar(false);
@@ -49,6 +50,9 @@ Template.uploadForm.events({
         });
 
         uploadInstance.start();
+        Session.set("idProfil", uploadInstance.config.fileId);
+        console.log('Bonjour')
+        console.log(file)
       }
     }
   },
