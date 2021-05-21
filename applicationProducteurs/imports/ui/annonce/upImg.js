@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
+import { Session } from 'meteor/session';
 import ImagesAnnonces from '../../api/annonces.js';
 import './upImg.html';
 
@@ -48,6 +49,7 @@ Template.uploadFormAnnonces.events({
         });
 
         uploadInstance.start();
+        Session.set("idImage", uploadInstance.config.fileId);
       }
     }
   },
