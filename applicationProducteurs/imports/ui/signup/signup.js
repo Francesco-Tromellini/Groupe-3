@@ -27,7 +27,7 @@ Template.signup.events({
           profile: {
             role: identite,
             likes: 0,
-            idProfil: null,
+            //idProfil: à remplir
           },
         },
         function (err) {
