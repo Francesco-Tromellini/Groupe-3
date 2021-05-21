@@ -4,11 +4,11 @@ import Images from '../../../api/images.js';
 
 import './images.html';
 
-Template.uploadedFiles.helpers({
+/*Template.uploadedFiles.helpers({
   uploadedFiles: function () {
     return Images.find();
   },
-});
+});*/
 
 Template.uploadForm.onCreated(function () {
   this.currentUpload = new ReactiveVar(false);
