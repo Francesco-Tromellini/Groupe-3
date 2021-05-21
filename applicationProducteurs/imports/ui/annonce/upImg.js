@@ -5,8 +5,8 @@ import ImagesAnnonces from '../../api/annonces.js';
 import './upImg.html';
 
 Template.uploadedFilesAnnonces.helpers({
-  uploadedFiles: function () {
-    return ImagesAnnonces.find();
+  file: function () {
+    return ImagesAnnonces.findOne({ _id: this.idImage});
   },
 });
 

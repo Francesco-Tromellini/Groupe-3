@@ -11,14 +11,6 @@
 
 <!--Template pour l'affichage de l'image-->
 <template name="uploadedFilesAnnonces">
-    {{#if uploadedFiles.count}}
-      <p>
-        {{#each file in uploadedFiles.each}}
-            <!-- <a href="{{file.link}}?download=true" download="{{file.name}}">{{file.name}}</a> -->
-            <img src="{{file.link}}?download=true" alt="Image du produit" height="150px" width="150px">
-        {{/each}}
-        </p>
-    {{else}}
-      <div>No files uploaded, yet</div>
-    {{/if}}
-  </template>
+  <!-- <a href="{{file.link}}?download=true" download="{{file.name}}">{{file.name}}</a> -->
+  <img src="{{file.link}}?download=true" alt="Image du produit" height="150px" width="150px">
+</template>
