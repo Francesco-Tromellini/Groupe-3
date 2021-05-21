@@ -7,6 +7,7 @@ import './filtre.js';
 
 // Mots clef
 import { Template } from 'meteor/templating';
+import { Session } from 'meteor/session';
 
 // Importer DB
 import { ObjetAnnonce } from '../../api/annonces.js';
@@ -33,6 +34,9 @@ Template.visualisation.events({
     let codePostalVal = target.annonceCode.value;
     let filtreAnnonce = document.getElementById('filtres-select');
     let filtreSelected = filtreAnnonce.value;
+    let idImage = Session.get('idImage');
+
+    Session.set('idImage', '');
 
     // Insert the Annonce in the collection
     if (titreVal != '' && descriptionVal != '' && codePostalVal != '') {
@@ -42,6 +46,7 @@ Template.visualisation.events({
         postalCode: codePostalVal,
         filtreSelected: filtreSelected,
         createdAt: new Date(),
+        idImage: idImage,
       });
 
       // Clear form
