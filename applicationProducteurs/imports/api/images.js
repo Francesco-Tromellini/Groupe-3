@@ -1,4 +1,5 @@
 import { FilesCollection } from 'meteor/ostrio:files';
+import { Mongo } from 'meteor/mongo';
 
 const Images = new FilesCollection({
   debug: true,
