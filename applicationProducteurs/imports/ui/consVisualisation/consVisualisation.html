@@ -2,10 +2,38 @@
 <template name="consVisualisation">
     <h2 id="titre" style='text-align: center;'>
         Liste d'annonces
+        
+    </h2>
+    <div id="corps" style='text-align: center;'>
         {{#each objet}} 
         {{> annonce}} 
         {{/each}} 
-    </h2>
+    </div>
     
+
+   <div class="filtre" id="filtrebijoux" style='text-align: center; margin-left: 300px;' hidden>
+        {{#each bijoux}} 
+        {{> annonce}} 
+        {{/each}} 
+    </div>
+
+    <div class="filtre" id="filtrevêtements" style='text-align: center; margin-left: 300px;' hidden>
+        {{#each vêtements}} 
+        {{> annonce}} 
+        {{/each}} 
+    </div>
+
+    <div class="filtre" id="filtremaraîcher" style='text-align: center; margin-left: 300px;' hidden>
+        {{#each maraicher}} 
+        {{> annonce}} 
+        {{/each}} 
+    </div>
+
+    <div class="filtre" id="filtrepoissonier" style='text-align: center; margin-left: 300px;' hidden>
+        {{#each poissonier}} 
+        {{> annonce}} 
+        {{/each}} 
+    </div>
+
     {{> cons_sidebar}}
 </template>
