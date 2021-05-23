@@ -16,7 +16,7 @@ import { ImagesAnnonces } from '../../api/annonces.js';
 // Affichier l'image et l'annonce
 Template.visualisation.helpers({
   objet() {
-    return ObjetAnnonce.find({}, { sort: { createdAt: 1 } });
+    return ObjetAnnonce.find({}, { sort: { createdAt: -1 } });
   },
   imageFile() {
     return ImagesAnnonces.findOne();
