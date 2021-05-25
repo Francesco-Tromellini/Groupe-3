@@ -15,13 +15,61 @@ import { ImagesAnnonces } from '../../api/annonces.js';
 
 // Affichier l'image et l'annonce
 Template.visualisation.helpers({
-  objet() {
+  annoncesrecentes() {
     return ObjetAnnonce.find({}, { sort: { createdAt: -1 } });
   },
   imageFile() {
     return ImagesAnnonces.findOne();
   },
 });
+
+Template.navigation.events({
+  "click #annoncesrecentes": function recentes() {
+    document.getElementById("annonceForm-wrap").setAttribute("hidden", "");
+    const allannonces = document.getElementsByClassName("allannonces");
+    for (let j = 0; j<= allannonces.length; j++) {
+      allannonces[j].setAttribute("hidden", "");
+       if (j == 0) {
+        allannonces[j].removeAttribute("hidden");
+      }
+    }
+  }
+});
+
+Template.visualisation.helpers({
+  annoncesanciennes() {
+    return ObjetAnnonce.find({}, { sort: { createdAt: 1 } });
+  },
+  imageFile() {
+    return ImagesAnnonces.findOne();
+  },
+});
+
+Template.navigation.events({
+  "click #annoncesanciennes": function anciennes() {
+    document.getElementById("annonceForm-wrap").setAttribute("hidden", "");
+    const allannonces = document.getElementsByClassName("allannonces");
+    for (let j = 0; j<= allannonces.length; j++) {
+      allannonces[j].setAttribute("hidden", "");
+       if (j == 1) {
+        allannonces[j].removeAttribute("hidden");
+      }
+    }
+  }
+});
+
+Template.navigation.events({
+  "click #createannonce": function anciennes() {
+    console.log('clic');
+    document.getElementById("annonceForm-wrap").removeAttribute("hidden");
+    const allannonces = document.getElementsByClassName("allannonces");
+    for (let j = 0; j<= allannonces.length; j++) {
+      allannonces[j].setAttribute("hidden", "");
+    }
+  }
+});
+
+
 
 Template.visualisation.events({
   'submit .annonce-post': function (event) {

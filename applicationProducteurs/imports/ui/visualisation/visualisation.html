@@ -1,7 +1,6 @@
 <template name="visualisation">
     <center>
         <h2 id="listeannonce">
-            Liste d'annonces
         </h2>
         <div id="annonceForm-wrap" class="form-group">
         <form action="" class="annonce-post">
@@ -24,10 +23,14 @@
         </form>
         <br>
         <br>
-        <div class="" style="text-align: center;">
-             {{#each objet}} {{> annonce}} {{/each}} 
         </div>
+        
+        <div class="allannonces" style="text-align: center; margin-left: 300px;" hidden>
+             {{#each annoncesrecentes}} {{> annonce}} {{/each}} 
         </div>
+        <div class="allannonces" style="text-align: center; margin-left: 300px;" hidden>
+            {{#each annoncesanciennes}} {{> annonce}} {{/each}} 
+       </div>
     </center>
     {{> sidebar}}
 </template>
