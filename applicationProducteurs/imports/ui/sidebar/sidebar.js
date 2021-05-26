@@ -27,7 +27,7 @@ Template.sidebar.events({
 
         Session.set('idProfil', '');
 
-        //changer la valeur de la photo de profil dans la BD de l'utilisateur
+        //changer la valeur de la photo de profil dans la BD 
         Meteor.users.update({_id: Meteor.userId() }, { $set: { 'profile.idProfil': idProfil } });
 
 
