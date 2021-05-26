@@ -3,7 +3,14 @@
     <h2 id="titre" style='text-align: center;'>
         Liste d'annonces
         
-    </h2>
+    </h2> <br>
+
+    <div id="recherchecodepostal" style="margin-left: 300px;">
+        <span>code postal</span>
+        <input type="number" id="codepostal">  
+        <button id="rechercher">rechercher</button> <br>
+    </div>
+    
     <div id="corps" style='text-align: center;'>
         {{#each objet}} 
         {{> annonce}} 
