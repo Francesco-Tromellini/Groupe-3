@@ -1,0 +1,14 @@
+<template name="uploadFormCons">
+    {{#with currentUpload}}
+      Uploading <b>{{file.name}}</b>: 
+      <span id="progress">{{progress.get}}%</span>
+    {{else}}
+      <input id="fileInput" type="file" />
+      <p><small>Téléchargez le fichier en format <code>jpeg</code> ou <code>png</code>, avec une taille inférieure ou égale à 10MB</small></p>
+    {{/with}}
+    
+  </template>
+  
+  <template name="uploadedFilesCons">
+    <img src="{{file.link}}?download=true" alt="Image de profil" height="150px" width="150px">
+  </template>

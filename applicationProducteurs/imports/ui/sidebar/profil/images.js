@@ -1,8 +1,9 @@
+import './images.html';
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Session } from 'meteor/session';
 import Images from '../../../api/images.js';
-import './images.html';
+
 
 //retourner l'image qui est enregistrée dans le profil de l'utilsateur 
 Template.uploadedFiles.helpers({
