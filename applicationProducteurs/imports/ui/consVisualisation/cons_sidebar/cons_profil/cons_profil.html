@@ -1,4 +1,12 @@
 <template name = 'cons_profil'>
-    <img src="{{imageFile.link}}" alt="{{imageFile.name}}" style="height: 150px; width: 150px;"/>
-    <div class="username">Pseudo: {{currentUser.username}}</div> 
+    <center>
+        <div class="col">
+            <span>{{> uploadedFiles}}</span>
+        </div>
+        <br>
+        <div class="username">
+            Pseudo: {{currentUser.username}}
+        </div>
+    
+    </center>
 </template>
