@@ -4,17 +4,17 @@ import '../signup/signup.js';
 import { Meteor } from 'meteor/meteor';
 
 
-
-
 Template.login.events({
     'submit .form-signin'(event) {
+      //récupérer les données de l'email et du password 
+      //trimInput: enlever les espaces blanc des inputs
       const email = trimInput(event.target.email.value);
       const password = trimInput(event.target.password.value);
       
+      //recupérer le rôle de l'utilisateur : consommateur ou producteur
       let identite = Meteor.user().profile.role;
-      console.log(identite)
 
-
+      //vérifier que les champs sont bien remplis 
       if (isNotEmpty(email)
               && isNotEmpty(password)
               && isEmail(email)
@@ -25,12 +25,12 @@ Template.login.events({
             return false;
           }
           
+          //gérer le routing en fonction du role des utilisateurs 
           if (identite == "producteur") {
             setTimeout(() => FlowRouter.go('visualisation'), 200);
           } else if (identite == "consommateur") {
             setTimeout(() => FlowRouter.go('consVisualisation'), 200)
           }
-          //FlowRouter.go('visualisation');
         });
       }
   
@@ -41,8 +41,6 @@ Template.login.events({
   
   
   // Règles de validation pour le formulaire
-  
-  // Trim Helper
   let trimInput = function(val) {
     return val.replace(/^\s*|\s*$/g, '');
   };
@@ -55,7 +53,7 @@ Template.login.events({
     return false;
   };
   
-  // Validate Email
+  // Validation de l'email
   isEmail = function(value) {
     const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if (filter.test(value)) {
@@ -65,7 +63,7 @@ Template.login.events({
     return false;
   };
   
-  // Check Password Field
+  // Vérification du password
   isValidPassword = function(password) {
     if (password.length < 6) {
       Bert.alert("Le mot de passe doit contenir 6 charactères au minimum", 'danger', 'growl-top-right');
@@ -74,7 +72,7 @@ Template.login.events({
     return true;
   };
   
-  // Match password
+  // Vérification de la correspondance du password
   areValidPasswords = function(password, confirm) {
     if (!isValidPassword(password)) {
       return false;
