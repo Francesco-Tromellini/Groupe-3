@@ -24,13 +24,11 @@ Template.sidebar.events({
 
         Session.set('idProfil', '');
 
-        Meteor.users.update({_id: Meteor.userId() }, { $set: { 'idProfil': idProfil } });
-
+        Meteor.users.update({_id: Meteor.userId() }, { $set: { 'profile.idProfil': idProfil } });
 
         console.log(Meteor.user().profile.idProfil);
 
-        
-
+    
 
     }
 })

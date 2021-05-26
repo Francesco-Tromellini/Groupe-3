@@ -7,7 +7,7 @@ import './images.html';
 
 Template.uploadedFiles.helpers({
   file: function () {
-    return Images.findOne({_id: this.idProfil});
+    return Images.findOne({_id: Meteor.user().profile.idProfil});
   },
 });
 
@@ -53,6 +53,7 @@ Template.uploadForm.events({
         Session.set("idProfil", uploadInstance.config.fileId);
         console.log('Bonjour')
         console.log(file)
+        console.log(Session.get('idProfil'))
       }
     }
   },
