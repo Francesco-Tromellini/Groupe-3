@@ -60,7 +60,6 @@ Template.navigation.events({
 
 Template.navigation.events({
   "click #createannonce": function anciennes() {
-    console.log('clic');
     document.getElementById("annonceForm-wrap").removeAttribute("hidden");
     const allannonces = document.getElementsByClassName("allannonces");
     for (let j = 0; j<= allannonces.length; j++) {
