@@ -12,20 +12,23 @@ Template.uploadedFiles.helpers({
 });
 
 Template.uploadForm.onCreated(function () {
+  //reactiveVar pour stocker des données réactives, notre fichier image ici
   this.currentUpload = new ReactiveVar(false);
 });
 
 Template.uploadForm.helpers({
   currentUpload: function () {
+    //récupérer l'image téléchargée
     return Template.instance().currentUpload.get();
   },
 });
 
+//télécharger l'image 
 Template.uploadForm.events({
   'change #fileInput': function (e, template) {
     if (e.currentTarget.files && e.currentTarget.files[0]) {
-      // We upload only one file, in case
-      // there was multiple files selected
+      // Télécharger un seul fichier 
+      // au cas ou il y en avait plusieurs sélectionnés
       var file = e.currentTarget.files[0];
       if (file) {
         var uploadInstance = Images.insert(
@@ -42,14 +45,15 @@ Template.uploadForm.events({
 
         uploadInstance.on('end', function (error, fileObj) {
           if (error) {
-            window.alert('Error during upload: ' + error.reason);
+            window.alert('Erreur durant le téléchargement : ' + error.reason);
           } else {
-            window.alert('File "' + fileObj.name + '" successfully uploaded');
+            window.alert('Fichier "' + fileObj.name + '" téléchargé avec succès');
           }
           template.currentUpload.set(false);
         });
 
         uploadInstance.start();
+        //stocker des données reactives dans une variable
         Session.set("idProfil", uploadInstance.config.fileId);
 
       }
