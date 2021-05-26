@@ -13,7 +13,7 @@ import { Session } from 'meteor/session';
 import { ObjetAnnonce } from '../../api/annonces.js';
 import { ImagesAnnonces } from '../../api/annonces.js';
 
-// Affichier l'image et l'annonce
+// affichage des annonces dans l'ordre de plus au moins récent
 Template.visualisation.helpers({
   annoncesrecentes() {
     return ObjetAnnonce.find({}, { sort: { createdAt: -1 } });
@@ -23,6 +23,7 @@ Template.visualisation.helpers({
   },
 });
 
+// event quand on clique dans la sidebar qui affiche les annonces du plus au moins récent
 Template.navigation.events({
   "click #annoncesrecentes": function recentes() {
     document.getElementById("annonceForm-wrap").setAttribute("hidden", "");
@@ -36,6 +37,7 @@ Template.navigation.events({
   }
 });
 
+// affichage des annonces du plus au moins anciens
 Template.visualisation.helpers({
   annoncesanciennes() {
     return ObjetAnnonce.find({}, { sort: { createdAt: 1 } });
@@ -45,6 +47,7 @@ Template.visualisation.helpers({
   },
 });
 
+// event quand on clique dans la sidebar qui affiche les annonces du plus au moins anciens
 Template.navigation.events({
   "click #annoncesanciennes": function anciennes() {
     document.getElementById("annonceForm-wrap").setAttribute("hidden", "");
@@ -58,6 +61,7 @@ Template.navigation.events({
   }
 });
 
+// event quand on clique dans la sidebar affichage du formulaire pour créer une annonce
 Template.navigation.events({
   "click #createannonce": function anciennes() {
     document.getElementById("annonceForm-wrap").removeAttribute("hidden");

@@ -9,6 +9,8 @@ import { Template } from 'meteor/templating';
 
 import { ObjetAnnonce } from '../../api/annonces.js';
 
+
+// affichage de toute les annonces
 Template.consVisualisation.helpers({
   objet() {
     return ObjetAnnonce.find({}, { sort: { createdAt: -1 } });
@@ -18,6 +20,7 @@ Template.consVisualisation.helpers({
   },
 });
 
+// affichage des annonces portant le filtre "bijoux"
 Template.consVisualisation.helpers({
   bijoux() {
     return ObjetAnnonce.find({ filtreSelected: "bijoux"}, { sort: { createdAt: -1 } } );
@@ -27,20 +30,20 @@ Template.consVisualisation.helpers({
   },
 });
 
-
+// évènement de clic qui n'affiche que les annonces avec le filtre bijoux (même logique pour le reste des events)
 Template.cons_sidebar.events({
   'click #bijoux': function () {
-    document.getElementById('corps').innerHTML = "";
-    const filtre = document.getElementsByClassName('filtre');
-    for (let j = 0; j<= filtre.length; j++) {
-      filtre[j].setAttribute("hidden", "");
-      if (j == 0) {
-        filtre[j].removeAttribute("hidden");
+    document.getElementById('corps').innerHTML = ""; // retirer l'affichage de toutes annonces
+    const filtre = document.getElementsByClassName('filtre'); // récuper tous les div de la classe "filtre" dans un tableau
+    for (let j = 0; j<= filtre.length; j++) { // itérer sur tous les éléments du tableau
+      filtre[j].setAttribute("hidden", ""); // cacher tous les éléments de classe filtre
+      if (j == 0) { // condition pour séléctionner le div correspondant à la catégorie "bijoux" 
+        filtre[j].removeAttribute("hidden"); // afficher cet élément 
       }
     }
   }
 });
-
+// affichage des annonces portant le filtre "vêtement"
 Template.consVisualisation.helpers({
   vêtements() {
     return ObjetAnnonce.find({ filtreSelected: "vêtements"}, { sort: { createdAt: -1 } } );
@@ -64,7 +67,7 @@ Template.cons_sidebar.events({
   }
 });
 
-
+// affichage des annonces portant le filtre "maraîcher"
 Template.consVisualisation.helpers({
   maraicher() {
     return ObjetAnnonce.find({ filtreSelected: "maraîcher"}, { sort: { createdAt: -1 } } );
@@ -88,7 +91,7 @@ Template.cons_sidebar.events({
   }
 });
 
-
+// affichage des annonces portant le filtre "poissonier"
 Template.consVisualisation.helpers({
   poissonier() {
     return ObjetAnnonce.find({ filtreSelected: "poissonnier"}, { sort: { createdAt: -1 } } );
