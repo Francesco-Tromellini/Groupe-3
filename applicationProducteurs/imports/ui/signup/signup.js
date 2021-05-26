@@ -2,7 +2,7 @@ import './signup.html';
 import '../choice/choice.js';
 
 
-
+//récupérer le contenu des inputs 
 Template.signup.events({
   'submit .form-signup'(event) {
     const username = trimInput(event.target.username.value);
@@ -11,8 +11,7 @@ Template.signup.events({
     const password2 = trimInput(event.target.password2.value);
     const identite = trimInput(event.target.formControlSelect.value);
 
-    console.log(event.target.formControlSelect.value);
-
+    //conditions de validation : les champs sont tous remplis
     if (
       isNotEmpty(email) &&
       isNotEmpty(username) &&
@@ -27,9 +26,12 @@ Template.signup.events({
           email: email,
           password: password,
           profile: {
-            role: identite,
+            //consommateur ou producteur 
+            role: identite, 
+            //nombre de likes du producteur
             likes: 0,
-            idProfil: '',
+            //image de profil
+            idProfil: '', 
           },
         },
         function (err) {
@@ -37,10 +39,11 @@ Template.signup.events({
             Bert.alert(err.reason, 'danger', 'growl-top-right');
           } else {
             Bert.alert(
-              'Account Created! You Are Now Logged In',
+              'Compte créé ! Vous êtes maintenant connecté',
               'success',
               'growl-top-right'
             );
+            //la condition qui définit le routing
             if (identite == 'producteur') {
               setTimeout(() => FlowRouter.go('visualisation'), 200);
             } else if (identite == 'consommateur') {
@@ -93,7 +96,7 @@ isEmail = function (value) {
 isValidPassword = function (password) {
   if (password.length < 6) {
     Bert.alert(
-      'Le mot de passe doit contenir 6 charactères au minimum',
+      'Le password doit contenir 6 charactères au minimum',
       'danger',
       'growl-top-right'
     );
@@ -109,7 +112,7 @@ areValidPasswords = function (password, confirm) {
   }
   if (password !== confirm) {
     Bert.alert(
-      'Les mots de passe ne correspondent pas',
+      'Les passwords ne correspondent pas',
       'danger',
       'growl-top-right'
     );

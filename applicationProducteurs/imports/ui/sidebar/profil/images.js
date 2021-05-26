@@ -4,7 +4,7 @@ import { Session } from 'meteor/session';
 import Images from '../../../api/images.js';
 import './images.html';
 
-
+//retourner l'image qui est enregistrée dans le profil de l'utilsateur 
 Template.uploadedFiles.helpers({
   file: function () {
     return Images.findOne({_id: Meteor.user().profile.idProfil});
@@ -51,9 +51,7 @@ Template.uploadForm.events({
 
         uploadInstance.start();
         Session.set("idProfil", uploadInstance.config.fileId);
-        console.log('Bonjour')
-        console.log(file)
-        console.log(Session.get('idProfil'))
+
       }
     }
   },

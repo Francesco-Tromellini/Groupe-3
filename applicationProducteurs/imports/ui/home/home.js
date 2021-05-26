@@ -3,6 +3,7 @@ import { Template } from 'meteor/templating';
 
 import './home.html'
 
+//gérer les routes en fonction du bouton sur lequel l'utilisateur clique
 
 Template.home.events({
     'click #btn3'(){
@@ -16,16 +17,4 @@ Template.home.events({
     },
 });
 
-/*
-Template.home.events({
-    'click #btn5'(){
-        FlowRouter.go('visualisation');
-    },
-});
 
-    Template.home.events({
-        'click #btn6'(){
-            FlowRouter.go('consVisualisation');
-        },
-});
-*/

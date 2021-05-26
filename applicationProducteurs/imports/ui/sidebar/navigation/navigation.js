@@ -1,4 +1,5 @@
 import './navigation.html';
+
 //event 1er sous menu
 Template.navigation.events({
     'mouseover .mesannonces': function() {
