@@ -9,6 +9,18 @@ import { Template } from 'meteor/templating';
 
 import { ObjetAnnonce } from '../../api/annonces.js';
 
+// event pour rechercher par code postal
+Template.consVisualisation.events ({
+  'click #rechercher': function rechercher () {
+    const input = document.getElementById('codepostal');
+    const code = input.value
+    console.log(input.value);
+    if (code >= 999) {
+      window.alert("sometext");
+    }
+  }
+
+});
 
 // affichage de toute les annonces
 Template.consVisualisation.helpers({

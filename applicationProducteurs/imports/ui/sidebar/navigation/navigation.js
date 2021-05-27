@@ -1,6 +1,6 @@
 import './navigation.html';
 
-//event 1er sous menu
+//event qui déroule les sous menus
 Template.navigation.events({
     'mouseover .mesannonces': function() {
             const a = document.getElementsByClassName('mesannonces_sous');
@@ -9,7 +9,7 @@ Template.navigation.events({
             }
     }
 });
-
+// event qui cache le sous menu
 Template.navigation.events({
     'mouseout .mesannonces': function() {
             const a = document.getElementsByClassName('mesannonces_sous');

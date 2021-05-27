@@ -16,7 +16,7 @@ import { ImagesAnnonces } from '../../api/annonces.js';
 // affichage des annonces dans l'ordre de plus au moins récent
 Template.visualisation.helpers({
   annoncesrecentes() {
-    return ObjetAnnonce.find({}, { sort: { createdAt: -1 } });
+    return ObjetAnnonce.find({user: Meteor.user()._id}, { sort: { createdAt: -1 } });
   },
   imageFile() {
     return ImagesAnnonces.findOne();
@@ -40,7 +40,7 @@ Template.navigation.events({
 // affichage des annonces du plus au moins anciens
 Template.visualisation.helpers({
   annoncesanciennes() {
-    return ObjetAnnonce.find({}, { sort: { createdAt: 1 } });
+    return ObjetAnnonce.find({user: Meteor.user()._id}, { sort: { createdAt: 1 } });
   },
   imageFile() {
     return ImagesAnnonces.findOne();
@@ -98,6 +98,7 @@ Template.visualisation.events({
         filtreSelected: filtreSelected,
         createdAt: new Date(),
         idImage: idImage,
+        user: Meteor.user()._id,
       });
 
       // Clear form
