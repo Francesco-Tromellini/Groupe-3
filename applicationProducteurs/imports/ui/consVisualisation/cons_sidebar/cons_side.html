@@ -1,13 +1,19 @@
 <template name="cons_sidebar">
-    <div class="cons_sidenav">
-        {{> cons_profil}}
-        {{> cons_navigation}}
-        <div class="profilPicture">
-            <p>Modifier votre photo de profil :</p> 
-            <br>
-            {{> uploadForm}}
-        </div>
-        <a class="link-purple logout" href="./login" id="logout-link"><i class="fa fa-sign-out"></i>Se déconnecter</a>
-        
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>A propos</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                {{> cons_profil}}
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">{{> cons_navigation}}</a>
+                    <p class="dropdown-toggle">Modifier votre photo de profil : <br>{{> uploadForm}}</p>
+                    <a class="link-purple logout" href="./login" id="logout-link"><i class="fa fa-sign-out"></i>Se déconnecter</a>
+                </li>
+            </ul>
+            
+        </nav>
     </div>
-  </template>
+</template>
