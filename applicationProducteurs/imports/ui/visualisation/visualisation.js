@@ -8,6 +8,7 @@ import './filtre.js';
 // Mots clef
 import { Template } from 'meteor/templating';
 import { Session } from 'meteor/session';
+import { Meteor } from 'meteor/meteor';
 
 // Importer DB
 import { ObjetAnnonce } from '../../api/annonces.js';
@@ -86,6 +87,7 @@ Template.visualisation.events({
     let filtreAnnonce = document.getElementById('filtres-select');
     let filtreSelected = filtreAnnonce.value;
     let idImage = Session.get('idImage');
+    
 
     Session.set('idImage', '');
 
