@@ -1,7 +1,8 @@
 import { Template } from 'meteor/templating';
 
 
-import './home.html'
+import './home.html';
+import './home.css';
 
 //gérer les routes en fonction du bouton sur lequel l'utilisateur clique
 

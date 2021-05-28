@@ -1,0 +1,18 @@
+#titre{
+    color: #BED3C3;
+    font-style : normal;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    display: block;
+    margin: auto;
+}
+
+#btn3{
+    display: block;
+    margin: auto; 
+}
+
+#center{
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
