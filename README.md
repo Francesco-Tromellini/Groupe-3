@@ -1,5 +1,10 @@
 # Groupe-3 Producteurs locaux
 
+##ProdArt 
+Autrices et auteurs :  Leonie Nussbaum, Marie Melly, Bechir et Francesco Tromellini. 
+
+Projet réalisé dans le cadre du cours _Programmation pour Internet II - Meteor.js_ dispensé par Isaac Pante et Loris Rimaz. 
+
 ## Description du projet
 
 Plateforme s'apparentant à Tinder (dans une certaine mesure, notamment au niveau de l'interface), qui permet aux consommateurs de rentrer leur localisation et un rayon voulu pour découvrir des producteurs aux alentours et pouvoir les suivre (à voir). Les producteurs/artisants pourront mettre à jour leurs données, et les consommateurs pourront alors suivre leurs actualités s'ils le veulent. Notre projet serait donc centré autour de la mise en avant de producteurs et d'artisans locaux. Il y aurait également possibilité de trouver des producteurs/artisans de manière plus ciblée, en recherchant des informations plus spécifiques que simplement un rayon (comme par exemple un type d'objet/produit particulier). De plus, il serait possible de définir un itinéraire, et en fonciton de celui-ci, faire apparaître les producteurs/artisans se situant sur le trajet.  
