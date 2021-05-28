@@ -4,6 +4,7 @@ import './profil/profil.js';
 import './navigation/navigation.js';
 import './likes/likes.js';
 import './profil/images.js';
+import '../visualisation/visualisation.js';
 
 // Mots clef
 import { Template } from 'meteor/templating';

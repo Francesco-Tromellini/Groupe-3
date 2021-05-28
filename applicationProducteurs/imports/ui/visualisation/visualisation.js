@@ -113,3 +113,4 @@ Template.visualisation.events({
     }
   },
 });
+

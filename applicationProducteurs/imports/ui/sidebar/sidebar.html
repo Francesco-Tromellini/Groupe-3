@@ -1,5 +1,5 @@
-<template name="sidebar">
-    <div class="sidenav">
+<!--<template name="sidebar">
+   <div class="sidenav">
         {{> profil}}
         {{> navigation}}
         {{> nombreLikes}}
@@ -10,6 +10,26 @@
         </div>
         <a class="link-purple logout" href="./login" id="logout-link"><i class="fa fa-sign-out"></i>Se déconnecter</a>
     </div>
+    
+</template>-->
+
+<!--tentative de sidebar stylisée-->
+<template name="sidebar">
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>A propos</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                {{> profil}}
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">{{> navigation}}</a>
+                    <p class="dropdown-toggle">{{> nombreLikes}}</p>
+                    <p class="dropdown-toggle">Modifier votre photo de profil : <br>{{> uploadForm}}</p>
+
+                </li>
+            </ul>
+        </nav>
+    </div>
 </template>
-
-
