@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-.wrapper{
+/*.wrapper{
   height: 100%;
   width: 250%;
   position: fixed;
@@ -11,7 +11,7 @@
   text-align: center;
   font-size: 14px;
 
-}
+}*/
 
 #sidebar {
   min-width: 250px;
