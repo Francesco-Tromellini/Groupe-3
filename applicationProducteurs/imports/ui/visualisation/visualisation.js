@@ -84,6 +84,7 @@ Template.visualisation.events({
     let descriptionVal = target.annoncePost.value;
     let titreVal = target.annonceName.value;
     let codePostalVal = target.annonceCode.value;
+    let contactVal = target.annonceContact.value;
     let filtreAnnonce = document.getElementById('filtres-select');
     let filtreSelected = filtreAnnonce.value;
     let idImage = Session.get('idImage');
@@ -97,6 +98,7 @@ Template.visualisation.events({
         title: titreVal,
         description: descriptionVal,
         postalCode: codePostalVal,
+        contact: contactVal,
         filtreSelected: filtreSelected,
         createdAt: new Date(),
         idImage: idImage,
@@ -104,6 +106,7 @@ Template.visualisation.events({
       });
 
       // Clear form
+      target.annonceContact.value = '';
       target.annonceName.value = '';
       target.annoncePost.value = '';
       target.annonceCode.value = '';
