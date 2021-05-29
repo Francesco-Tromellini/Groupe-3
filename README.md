@@ -1,7 +1,7 @@
 # Groupe-3 Producteurs locaux
 
 ## ProdArt version Beta 
-Autrices et auteurs :  Leonie Nussbaum, Marie Melly, Bechir et Francesco Tromellini. 
+Autrices et auteurs :  Leonie Nussbaum, Marie Melly, Bechir Boumaza et Francesco Tromellini. 
 
 Projet réalisé dans le cadre du cours _Programmation pour Internet II - Meteor.js_ dispensé par Isaac Pante et Loris Rimaz. 
 
