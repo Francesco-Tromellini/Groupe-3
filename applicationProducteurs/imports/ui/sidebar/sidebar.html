@@ -7,11 +7,16 @@
             </div>
 
             <ul class="list-unstyled components">
+                
+            
                 {{> profil}}
+                
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">{{> navigation}}</a>
                     <p class="dropdown-toggle">{{> nombreLikes}}</p>
+                    <div class="profilPicture">
                     <p class="dropdown-toggle">Modifier votre photo de profil : <br>{{> uploadForm}}</p>
+                    </div>
                     <a class="link-purple logout" href="./login" id="logout-link"><i class="fa fa-sign-out"></i>Se déconnecter</a>
 
                 </li>
