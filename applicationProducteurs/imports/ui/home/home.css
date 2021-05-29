@@ -5,11 +5,14 @@
     font-variant: small-caps;
     display: block;
     margin: auto;
+    text-align: center;
+    
 }
 
 #btn3{
     display: block;
     margin: auto; 
+    text-align: center;
 }
 
 #center{
