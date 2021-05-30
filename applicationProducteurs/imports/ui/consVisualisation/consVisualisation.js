@@ -37,12 +37,13 @@ Template.consVisualisation.helpers({
   },
 });
 
+// event sur le bouton accueil
 Template.cons_sidebar.events({
   'click #accueil': function () {
-    document.getElementById('corps').removeAttribute("hidden");
-    const filtre = document.getElementsByClassName('filtre');
+    document.getElementById('corps').removeAttribute("hidden"); // afficher à nouveau toutes les annonces
+    const filtre = document.getElementsByClassName('filtre'); 
     for (let j = 0; j<= filtre.length; j++) {
-      filtre[j].setAttribute("hidden", "");
+      filtre[j].setAttribute("hidden", ""); // retirer tous les affichage par filtre
     }
   }
 });

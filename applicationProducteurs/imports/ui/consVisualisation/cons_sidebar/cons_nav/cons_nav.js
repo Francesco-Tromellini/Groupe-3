@@ -12,7 +12,7 @@ Template.cons_navigation.events({
   },
 });
 
-// event qui masque le sous menu de "artisannat"
+// event qui masque le sous menu de "artisanat"
 Template.cons_navigation.events({
   'mouseout .art': function () {
     const a = document.getElementsByClassName('art_sous');

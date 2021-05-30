@@ -28,8 +28,7 @@ Template.login.events({
           //gérer le routing en fonction du role des utilisateurs 
           if (identite == "producteur") {
             setTimeout(() => FlowRouter.go('visualisation'), 200);
-          }
-          if (identite == "consommateur") {
+          } else if (identite == "consommateur") {
             setTimeout(() => FlowRouter.go('consVisualisation'), 200)
           }
         });
