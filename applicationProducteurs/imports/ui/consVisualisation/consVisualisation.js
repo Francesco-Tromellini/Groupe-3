@@ -37,6 +37,16 @@ Template.consVisualisation.helpers({
   },
 });
 
+Template.cons_sidebar.events({
+  'click #accueil': function () {
+    document.getElementById('corps').removeAttribute("hidden");
+    const filtre = document.getElementsByClassName('filtre');
+    for (let j = 0; j<= filtre.length; j++) {
+      filtre[j].setAttribute("hidden", "");
+    }
+  }
+});
+
 // affichage des annonces portant le filtre "bijoux"
 Template.consVisualisation.helpers({
   bijoux() {
@@ -50,7 +60,7 @@ Template.consVisualisation.helpers({
 // évènement de clic qui n'affiche que les annonces avec le filtre bijoux (même logique pour le reste des events)
 Template.cons_sidebar.events({
   'click #bijoux': function () {
-    document.getElementById('corps').innerHTML = ""; // retirer l'affichage de toutes annonces
+    document.getElementById('corps').setAttribute("hidden", ""); // retirer l'affichage de toutes annonces
     const filtre = document.getElementsByClassName('filtre'); // récuper tous les div de la classe "filtre" dans un tableau
     for (let j = 0; j<= filtre.length; j++) { // itérer sur tous les éléments du tableau
       filtre[j].setAttribute("hidden", ""); // cacher tous les éléments de classe filtre
@@ -73,7 +83,7 @@ Template.consVisualisation.helpers({
 
 Template.cons_sidebar.events({
   'click #vetements': function () {
-    document.getElementById('corps').innerHTML = "";
+    document.getElementById('corps').setAttribute("hidden", "");
     const filtre = document.getElementsByClassName('filtre');
     for (let j = 0; j<= filtre.length; j++) {
       filtre[j].setAttribute("hidden", "");
@@ -96,8 +106,7 @@ Template.consVisualisation.helpers({
 
 Template.cons_sidebar.events({
   'click #maraicher': function () {
-    
-    document.getElementById('corps').innerHTML = "";
+    document.getElementById('corps').setAttribute("hidden", "");
     const filtre = document.getElementsByClassName('filtre');
     for (let j = 0; j<= filtre.length; j++) {
       filtre[j].setAttribute("hidden", "");
@@ -120,7 +129,7 @@ Template.consVisualisation.helpers({
 
 Template.cons_sidebar.events({
   'click #poissonier': function () {
-    document.getElementById('corps').innerHTML = "";
+    document.getElementById('corps').setAttribute("hidden", "");
     const filtre = document.getElementsByClassName('filtre');
     for (let j = 0; j<= filtre.length; j++) {
       filtre[j].setAttribute("hidden", "");
