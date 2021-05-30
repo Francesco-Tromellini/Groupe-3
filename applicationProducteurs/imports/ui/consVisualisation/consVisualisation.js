@@ -9,16 +9,7 @@ import { Template } from 'meteor/templating';
 
 import { ObjetAnnonce } from '../../api/annonces.js';
 
-// event pour rechercher par code postal
-/*Template.consVisualisation.events ({
-  'click #rechercher': function rechercher () {
-    const input = document.getElementById('codepostal');
-    let code = input.value
-    let codeannonce = ObjetAnnonce.find({ postalCode: {} }).fetch();
-    return ObjetAnnonce.find({ postalCode: codeannonce })
-    }
-});*/
-
+// helpers pour récup les annonces par région
 Template.consVisualisation.helpers ({
   annonceregion() {
     let input = document.getElementById('codepostal').value;
@@ -26,13 +17,12 @@ Template.consVisualisation.helpers ({
   }
 });
 
+// event pour rechercher par code postal
 Template.consVisualisation.events({
   "click #rechercher": function filtreregion() {
     const annonceparcode = document.getElementById('annonceparcode');
     document.getElementById('corps').innerHTML = "";
-    let input = document.getElementById('codepostal').value;
-    console.log(ObjetAnnonce.find({ postalCode: input }, { sort: { createdAt: -1 } } ))
-   // annonceparcode.removeAttribute("hidden");
+    annonceparcode.removeAttribute("hidden");
     
   }
 });
