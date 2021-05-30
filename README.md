@@ -6,7 +6,7 @@ Autrices et auteurs :  Leonie Nussbaum, Marie Melly, Bechir Boumaza et Francesco
 Projet réalisé dans le cadre du cours _Programmation pour Internet II - Meteor.js_ dispensé par Isaac Pante et Loris Rimaz. 
 
 ## Description du projet
-Prodart est une application qui vise à encourager le commerce local dans le contexte de la pandémie de COVID-19. Elle permet à des producteurs et artisants de poster des annonces et à des consommateurs de naviguer dans ces annonces à l'aide de filtres. 
+ProdArt est une application qui vise à encourager le commerce local dans le contexte de la pandémie de COVID-19. Elle permet à des producteurs et artisants de poster des annonces et à des consommateurs de naviguer dans ces annonces à l'aide de filtres. 
 L'application ne permet pas de faire des transactions ou de gérer des livraisons mais agit plutôt comme un réseau social qui permet d'offrir de la  visibilité à des artisants et producteurs.
 L'application permet donc de créer deux types de comptes, producteurs/artisant ou consommateur. Les utilisateurs sélectionnent le type de compte qu'ils souhaitent créer au moment de leur inscription.
 
