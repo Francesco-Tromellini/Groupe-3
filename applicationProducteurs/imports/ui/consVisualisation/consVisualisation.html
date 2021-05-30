@@ -1,14 +1,14 @@
 
 <template name="consVisualisation">
-    <h2 id="titre" style='text-align: center;'>
+    <h2 id="titre" style='text-align: center; color: green;'>
         Liste d'annonces
         
     </h2> <br>
 
     <div id="recherchecodepostal" style="margin-left: 300px;">
-        <span>code postal</span>
+        <span style="color: green;">code postal</span>
         <input type="number" id="codepostal">  
-        <button id="rechercher">rechercher</button> <br>
+        <button class="rechercher" id="rechercher">rechercher</button> <br>
     </div>
     
     <div id="corps" style='text-align: center;'>
@@ -38,6 +38,12 @@
 
     <div class="filtre" id="filtrepoissonier" style='text-align: center; margin-left: 300px;' hidden>
         {{#each poissonier}} 
+        {{> annonce}} 
+        {{/each}} 
+    </div>
+
+    <div id="annonceparcode" style='text-align: center; margin-left: 300px;' hidden>
+        {{#each annonceregion}} 
         {{> annonce}} 
         {{/each}} 
     </div>
