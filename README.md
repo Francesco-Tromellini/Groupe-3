@@ -22,9 +22,11 @@ Ils peuvent ensuite visualiser les annonces qu'ils ont créé selon leur ordre d
 La fonctionnalité "like" qui permettra au consommateurs de laisser des likes sur les annonces et que les producteurs pourront voir dans leur sidebar n'a pas encore été implémenté.
 
 Les consommateurs peuvent voir toutes les annonces publiées qui s'affichent de la plus récentes à la plus anciennes
-![Capture d’écran 2021-05-30 à 19 47 11](https://user-images.githubusercontent.com/80388012/120115098-7c48ff00-c182-11eb-8314-1c5b16c40a9c.png)
+![Capture d’écran 2021-05-30 à 20 34 27](https://user-images.githubusercontent.com/80388012/120116038-840aa280-c186-11eb-827e-378836af9c7a.png)
+
 Via le menu déroulant ils peuvent sélectionner des filtres pour ne voir qu'un seul type d'annonce
-![Capture d’écran 2021-05-30 à 19 47 46](https://user-images.githubusercontent.com/80388012/120115128-9a166400-c182-11eb-801b-d6a861b11451.png)
+![Capture d’écran 2021-05-30 à 20 34 40](https://user-images.githubusercontent.com/80388012/120116043-8a991a00-c186-11eb-9bb8-79fa3095e8e8.png)
+
 La fonctionnalité "recherche par code postal" n'a pas encore été implémenté.
 
 
