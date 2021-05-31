@@ -11,7 +11,7 @@ L'application ne permet pas de faire des transactions ou de gérer des livraison
 L'application permet donc de créer deux types de comptes, producteurs/artisans ou consommateur. Les utilisateurs sélectionnent le type de compte qu'ils souhaitent créer au moment de leur inscription.
 
 ## Interface
-IMPORTANT: il est nécéssaire de créer au moins un compte et quelques annonces pour pouvoir tester toutes les fonctionnalités de l'app.
+IMPORTANT: il est nécessaire de créer au moins un compte et quelques annonces pour pouvoir tester toutes les fonctionnalités de l'app.
 
 Le login reconnaît le type d'utilisateur qui se connecte et le dirige automatiquement vers la page qui lui correspond.
 
