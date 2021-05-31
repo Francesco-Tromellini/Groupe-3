@@ -27,7 +27,8 @@ Les consommateurs peuvent voir toutes les annonces publiées qui s'affichent de 
 Via le menu déroulant, ils peuvent sélectionner des filtres pour ne voir qu'un seul type d'annonce
 ![Capture d’écran 2021-05-30 à 20 34 40](https://user-images.githubusercontent.com/80388012/120116043-8a991a00-c186-11eb-9bb8-79fa3095e8e8.png)
 
-La fonctionnalité "recherche par code postal" n'a pas encore été implémentée.
+Ils peuvent également rechercher des annonces par code postal pour trouver celles qui sont proche d'eux:
+![Capture d’écran 2021-05-31 à 10 07 49](https://user-images.githubusercontent.com/80388012/120162668-e603f000-c1f8-11eb-99dd-6053a34c3f15.png)
 
 
 
