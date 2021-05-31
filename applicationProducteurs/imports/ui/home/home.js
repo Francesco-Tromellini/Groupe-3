@@ -10,12 +10,8 @@ Template.home.events({
     'click #btn3'(){
         FlowRouter.go('login');
     },
-});
-
-Template.home.events({
     'click #btn4'(){
         FlowRouter.go('signup');
-    },
+    }
 });
-
 

@@ -14,13 +14,13 @@ import { Meteor } from 'meteor/meteor';
 import { ObjetAnnonce } from '../../api/annonces.js';
 import { ImagesAnnonces } from '../../api/annonces.js';
 
-// affichage des annonces dans l'ordre de plus au moins récent
+// affichage des annonces selon l'ordre d'ajout
 Template.visualisation.helpers({
   annoncesrecentes() {
     return ObjetAnnonce.find({user: Meteor.user()._id}, { sort: { createdAt: -1 } });
   },
-  imageFile() {
-    return ImagesAnnonces.findOne();
+  annoncesanciennes() {
+    return ObjetAnnonce.find({user: Meteor.user()._id}, { sort: { createdAt: 1 } });
   },
 });
 
@@ -28,48 +28,18 @@ Template.visualisation.helpers({
 Template.navigation.events({
   "click #annoncesrecentes": function recentes() {
     document.getElementById("annonceForm-wrap").setAttribute("hidden", "");
-    const allannonces = document.getElementsByClassName("allannonces");
-    for (let j = 0; j<= allannonces.length; j++) {
-      allannonces[j].setAttribute("hidden", "");
-       if (j == 0) {
-        allannonces[j].removeAttribute("hidden");
-      }
-    }
-  }
-});
-
-// affichage des annonces du plus au moins anciens
-Template.visualisation.helpers({
-  annoncesanciennes() {
-    return ObjetAnnonce.find({user: Meteor.user()._id}, { sort: { createdAt: 1 } });
+    document.getElementById("annoncesanciennes").setAttribute("hidden", "");
+    document.getElementById("annoncesrecentes").removeAttribute("hidden");
   },
-  imageFile() {
-    return ImagesAnnonces.findOne();
-  },
-});
-
-// event quand on clique dans la sidebar qui affiche les annonces du plus au moins anciens
-Template.navigation.events({
-  "click #annoncesanciennes": function anciennes() {
+  "click #annoncesanciennes": function recentes() {
     document.getElementById("annonceForm-wrap").setAttribute("hidden", "");
-    const allannonces = document.getElementsByClassName("allannonces");
-    for (let j = 0; j<= allannonces.length; j++) {
-      allannonces[j].setAttribute("hidden", "");
-       if (j == 1) {
-        allannonces[j].removeAttribute("hidden");
-      }
-    }
-  }
-});
-
-// event quand on clique dans la sidebar affichage du formulaire pour créer une annonce
-Template.navigation.events({
-  "click #createannonce": function anciennes() {
+    document.getElementById("annoncesrecentes").setAttribute("hidden", "");
+    document.getElementById("annoncesanciennes").removeAttribute("hidden");
+  },
+  "click #createannonce": function recentes() {
+    document.getElementById("annoncesanciennes").setAttribute("hidden", "");
+    document.getElementById("annoncesrecentes").setAttribute("hidden", "");
     document.getElementById("annonceForm-wrap").removeAttribute("hidden");
-    const allannonces = document.getElementsByClassName("allannonces");
-    for (let j = 0; j<= allannonces.length; j++) {
-      allannonces[j].setAttribute("hidden", "");
-    }
   }
 });
 
