@@ -1,10 +1,10 @@
-#titre{
+
+.title{
+    margin-top: 50px;
     color: #BED3C3;
     font-style : normal;
     font-family: sans-serif;
     font-variant: small-caps;
-    display: block;
-    margin: auto;
 
 }
 
@@ -12,9 +12,4 @@
     display: block;
     margin: auto; 
     text-align: center;
-}
-
-#center{
-    margin-top: 50vh;
-    transform: translateY(-50%);
 }
